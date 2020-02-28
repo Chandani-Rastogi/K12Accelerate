@@ -1,0 +1,1954 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FEB59823256D3846717B16B /* Pods_eLiteSISUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4361A35AEA7C87D0DB7440 /* Pods_eLiteSISUITests.framework */; };
+		5A13349923FE923200C716B0 /* TransportDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13349823FE923200C716B0 /* TransportDetailsController.swift */; };
+		5A13349D23FE926700C716B0 /* TransportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13349B23FE926700C716B0 /* TransportTableViewCell.swift */; };
+		5A13349E23FE926700C716B0 /* TransportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A13349C23FE926700C716B0 /* TransportTableViewCell.xib */; };
+		5A5895512408E18600C53CCE /* FeeReceiptNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5895502408E18600C53CCE /* FeeReceiptNavigationController.swift */; };
+		5A59029E2403A9A700C740EA /* TransportResponseRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59029B2403A9A700C740EA /* TransportResponseRootClass.swift */; };
+		5A59029F2403A9A700C740EA /* TransportResponseStopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59029C2403A9A700C740EA /* TransportResponseStopList.swift */; };
+		5A5902A02403A9A700C740EA /* TransportResponseTransportDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59029D2403A9A700C740EA /* TransportResponseTransportDetail.swift */; };
+		5A5902A72403C44700C740EA /* StopRouteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5902A52403C44700C740EA /* StopRouteTableViewCell.swift */; };
+		5A5902A82403C44700C740EA /* StopRouteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A5902A62403C44700C740EA /* StopRouteTableViewCell.xib */; };
+		5A5902AB2403E93800C740EA /* sampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5902A92403E93800C740EA /* sampleTableViewCell.swift */; };
+		5A5902AC2403E93800C740EA /* sampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A5902AA2403E93800C740EA /* sampleTableViewCell.xib */; };
+		5A5902AE2403FE9D00C740EA /* EmployeeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5902AD2403FE9D00C740EA /* EmployeeListController.swift */; };
+		5A5C2B6124044297009E98AB /* NotificationSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C2B5F24044297009E98AB /* NotificationSummaryCell.swift */; };
+		5A5C2B6224044297009E98AB /* NotificationSummaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A5C2B6024044297009E98AB /* NotificationSummaryCell.xib */; };
+		5A8EEDC82404E56100711941 /* NotificationSummaryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EEDC72404E56000711941 /* NotificationSummaryController.swift */; };
+		5A8EEDCA2404EFBB00711941 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EEDC92404EFBB00711941 /* SummaryView.swift */; };
+		5A8EEDCC2404EFCF00711941 /* SummaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A8EEDCB2404EFCF00711941 /* SummaryView.xib */; };
+		5A8EEDCD2404F88E00711941 /* SummaryView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 5A8EEDC92404EFBB00711941 /* SummaryView.swift */; };
+		5AAF9EE424064A7200694F9E /* BasicPayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAF9EE224064A7200694F9E /* BasicPayTableViewCell.swift */; };
+		5AAF9EE524064A7200694F9E /* BasicPayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AAF9EE324064A7200694F9E /* BasicPayTableViewCell.xib */; };
+		5AAF9EE724064DAA00694F9E /* BasicFeeDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAF9EE624064DAA00694F9E /* BasicFeeDetailController.swift */; };
+		5AAF9EF02406880500694F9E /* PayDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAF9EEF2406880400694F9E /* PayDetailController.swift */; };
+		5AAF9EF22406A0D800694F9E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAF9EF12406A0D800694F9E /* WebViewController.swift */; };
+		5AAF9EF52406ABC300694F9E /* PayDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAF9EF32406ABC200694F9E /* PayDetailCell.swift */; };
+		5AAF9EF62406ABC300694F9E /* PayDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AAF9EF42406ABC300694F9E /* PayDetailCell.xib */; };
+		5AAF9EFA2407BC8500694F9E /* FeeReceiptTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AAF9EF92407BC8500694F9E /* FeeReceiptTableViewController.swift */; };
+		69009EC6233C94AF0014EB65 /* TeacherProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69009EC4233C94AF0014EB65 /* TeacherProfileController.swift */; };
+		690132252338CF8900DF0B81 /* CustomPhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690132242338CF8900DF0B81 /* CustomPhotoModel.swift */; };
+		69022BD52355821D00E979BB /* InternetReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69022BD42355821D00E979BB /* InternetReachability.swift */; };
+		6902D216234204D80022D6AD /* UITableViewCellAnimationKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6902D215234204D80022D6AD /* UITableViewCellAnimationKit.swift */; };
+		6902D21923421E420022D6AD /* FacultyStudyProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6902D21823421E420022D6AD /* FacultyStudyProgress.swift */; };
+		6908215A22F167A200745DFA /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908215922F167A200745DFA /* Constant.swift */; };
+		6908215C22F16B3100745DFA /* MoreHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6908215B22F16B3100745DFA /* MoreHeaderView.xib */; };
+		6908216322F16D5500745DFA /* MoreHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908216222F16D5500745DFA /* MoreHeaderView.swift */; };
+		6908216522F1706300745DFA /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908216422F1706300745DFA /* MoreTableViewController.swift */; };
+		6908216B22F18F3400745DFA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908216A22F18F3400745DFA /* CardView.swift */; };
+		6908216D22F19C9800745DFA /* DashBoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908216C22F19C9800745DFA /* DashBoardController.swift */; };
+		6908217322F1A5E800745DFA /* ProfileTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908217122F1A5E800745DFA /* ProfileTableTableViewController.swift */; };
+		6908217C22F1A8D900745DFA /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908217B22F1A8D900745DFA /* ProfileHeaderView.swift */; };
+		6908217E22F1AB3D00745DFA /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6908217D22F1AB3D00745DFA /* ProfileHeaderView.xib */; };
+		6908218022F1B27F00745DFA /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908217F22F1B27F00745DFA /* ProfileTableViewCell.swift */; };
+		6908218222F1B34100745DFA /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6908218122F1B34100745DFA /* ProfileTableViewCell.xib */; };
+		6908218A22F1C0AE00745DFA /* HealthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908218922F1C0AE00745DFA /* HealthHeaderView.swift */; };
+		6908219022F1C3E000745DFA /* HealthReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908218F22F1C3E000745DFA /* HealthReportTableViewCell.swift */; };
+		6908219222F1C61000745DFA /* HealthHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6908219122F1C61000745DFA /* HealthHeaderView.xib */; };
+		6908219422F1C7B300745DFA /* HealthReportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6908219322F1C7B300745DFA /* HealthReportTableViewCell.xib */; };
+		690BAAC0233E015400346892 /* StudentFacultyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690BAABF233E015400346892 /* StudentFacultyController.swift */; };
+		690D0407237D32640074EC65 /* FacultyDiscussionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690D0406237D32640074EC65 /* FacultyDiscussionViewController.swift */; };
+		690EE47C231F901C000776CF /* dashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690EE47A231F901C000776CF /* dashboardTableViewCell.swift */; };
+		690EE47D231F901C000776CF /* dashboardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690EE47B231F901C000776CF /* dashboardTableViewCell.xib */; };
+		690F59BB23389B21005E5DBF /* INSPhotoGallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 690F59BA23389B21005E5DBF /* INSPhotoGallery.framework */; };
+		690F59BD2338A613005E5DBF /* ExampleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690F59BC2338A613005E5DBF /* ExampleCollectionViewCell.swift */; };
+		690F59C42338BFBA005E5DBF /* CustomOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690F59C22338BFBA005E5DBF /* CustomOverlayView.xib */; };
+		690F59C52338BFBA005E5DBF /* CustomOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690F59C32338BFBA005E5DBF /* CustomOverlayView.swift */; };
+		690FFBA42302EFE00067CEDE /* StudyProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690FFBA32302EFE00067CEDE /* StudyProgressController.swift */; };
+		691025E3230C0D4E00C1E919 /* SenderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691025E0230C0D4D00C1E919 /* SenderTableViewCell.swift */; };
+		691025E4230C0D4E00C1E919 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691025E1230C0D4E00C1E919 /* MessageTableViewCell.swift */; };
+		691025E5230C0D4E00C1E919 /* ReceiverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691025E2230C0D4E00C1E919 /* ReceiverTableViewCell.swift */; };
+		6910DC7D230D60BC0078445A /* chevron-up.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6910DC7C230D60BC0078445A /* chevron-up.pdf */; };
+		6910FDDA2321042C00354BE2 /* StudyProgessHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6910FDD92321042B00354BE2 /* StudyProgessHeaderView.swift */; };
+		6910FDDC2321043400354BE2 /* StudyProgessHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6910FDDB2321043400354BE2 /* StudyProgessHeaderView.xib */; };
+		69171331230679F100AFDFF3 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6917132F230679F100AFDFF3 /* MoreTableViewCell.swift */; };
+		69171332230679F100AFDFF3 /* MoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69171330230679F100AFDFF3 /* MoreTableViewCell.xib */; };
+		69171339230680BD00AFDFF3 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69171338230680BD00AFDFF3 /* ForgotPasswordController.swift */; };
+		6917133B2306889000AFDFF3 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6917133A2306889000AFDFF3 /* TimeTableViewController.swift */; };
+		6917133E2306914200AFDFF3 /* TimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6917133C2306914200AFDFF3 /* TimeTableViewCell.swift */; };
+		6917133F2306914200AFDFF3 /* TimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6917133D2306914200AFDFF3 /* TimeTableViewCell.xib */; };
+		691713452306A26900AFDFF3 /* TimeTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691713442306A26900AFDFF3 /* TimeTableHeaderView.swift */; };
+		691713472306A3F200AFDFF3 /* TimeTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691713462306A3F200AFDFF3 /* TimeTableHeaderView.xib */; };
+		6917134A2306B33D00AFDFF3 /* DiscussionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691713492306B33D00AFDFF3 /* DiscussionViewController.swift */; };
+		6921A7FF22F7F299008DF4AA /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921A7FE22F7F299008DF4AA /* WebService.swift */; };
+		6921A80222F812F5008DF4AA /* HealthReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921A80122F812F5008DF4AA /* HealthReportViewController.swift */; };
+		6921A80422F83D96008DF4AA /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921A80322F83D96008DF4AA /* CoreDataController.swift */; };
+		6921A80C22F85AA3008DF4AA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6921A80B22F85AA3008DF4AA /* CoreData.framework */; };
+		6921C788230A67D0008BB59D /* TableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921C787230A67D0008BB59D /* TableSection.swift */; };
+		6921C791230AB0D5008BB59D /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921C78F230AB0D5008BB59D /* EventTableViewCell.swift */; };
+		6921C792230AB0D5008BB59D /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6921C790230AB0D5008BB59D /* EventTableViewCell.xib */; };
+		6921D90622FC1B5100E9B587 /* RadarMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921D90322FC1B5000E9B587 /* RadarMarkerView.swift */; };
+		6921D90722FC1B5100E9B587 /* XYMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921D90422FC1B5000E9B587 /* XYMarkerView.swift */; };
+		6921D90822FC1B5100E9B587 /* BalloonMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6921D90522FC1B5100E9B587 /* BalloonMarker.swift */; };
+		692B71AC22F2A9E9004031BE /* AssignmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692B71AA22F2A9E9004031BE /* AssignmentTableViewController.swift */; };
+		692B71B022F2AA30004031BE /* AssingnmentHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692B71AF22F2AA30004031BE /* AssingnmentHeaderView.xib */; };
+		692B71B422F2AE16004031BE /* AssignmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692B71B322F2AE16004031BE /* AssignmentTableViewCell.swift */; };
+		692B71B622F2AE3C004031BE /* AssignmentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692B71B522F2AE3C004031BE /* AssignmentHeaderView.swift */; };
+		692B71B822F2B74C004031BE /* AssignmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692B71B722F2B74C004031BE /* AssignmentTableViewCell.xib */; };
+		692B71BA22F2C19F004031BE /* PinBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692B71B922F2C19F004031BE /* PinBoardViewController.swift */; };
+		692B71BD22F2C4C6004031BE /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692B71BC22F2C4C6004031BE /* NotificationViewController.swift */; };
+		692B71C022F2CA0B004031BE /* ScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692B71BF22F2CA0B004031BE /* ScoreController.swift */; };
+		692B71C322F2CA49004031BE /* PerformanceScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692B71C222F2CA49004031BE /* PerformanceScoreController.swift */; };
+		692B71C522F2DBB5004031BE /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692B71C422F2DBB5004031BE /* GalleryViewController.swift */; };
+		692B71C822F2E35A004031BE /* ImageGalleryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692B71C722F2E35A004031BE /* ImageGalleryController.swift */; };
+		692B71CC22F3097E004031BE /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692B71CB22F3097E004031BE /* MyCell.swift */; };
+		692B71CE22F3098B004031BE /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692B71CD22F3098B004031BE /* MyCell.xib */; };
+		692B71D022F30B6D004031BE /* PerformanceHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692B71CF22F30B6D004031BE /* PerformanceHeaderView.xib */; };
+		692B71D222F30E61004031BE /* PerformanceHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692B71D122F30E61004031BE /* PerformanceHeaderView.swift */; };
+		692B71D422F31007004031BE /* PerformanceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692B71D322F31007004031BE /* PerformanceTableViewCell.xib */; };
+		692B71D622F3101B004031BE /* PerformanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692B71D522F3101B004031BE /* PerformanceTableViewCell.swift */; };
+		692B9D3E231E41E2008D8878 /* GetAvailableTimingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692B9D3D231E41E2008D8878 /* GetAvailableTimingController.swift */; };
+		692B9D41231E457C008D8878 /* GetTimeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692B9D40231E457C008D8878 /* GetTimeHeaderView.swift */; };
+		692B9D43231E4586008D8878 /* GetTimeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692B9D42231E4586008D8878 /* GetTimeHeaderView.xib */; };
+		692B9D46231E467D008D8878 /* GetTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692B9D44231E467D008D8878 /* GetTimeTableViewCell.swift */; };
+		692B9D47231E467D008D8878 /* GetTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692B9D45231E467D008D8878 /* GetTimeTableViewCell.xib */; };
+		692C5A49230E94D300ECEFC6 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692C5A47230E94D300ECEFC6 /* NotificationTableViewCell.swift */; };
+		692C5A4A230E94D300ECEFC6 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692C5A48230E94D300ECEFC6 /* NotificationTableViewCell.xib */; };
+		692D5A212334B235007828C7 /* dashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D5A1F2334B235007828C7 /* dashboardCollectionViewCell.swift */; };
+		692D5A222334B235007828C7 /* dashboardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692D5A202334B235007828C7 /* dashboardCollectionViewCell.xib */; };
+		692D5A262334ED0E007828C7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692D5A252334ED0E007828C7 /* Reusable.swift */; };
+		692DB816233341A900E56204 /* TeacherDashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692DB814233341A900E56204 /* TeacherDashboardTableViewCell.swift */; };
+		692DB817233341A900E56204 /* TeacherDashboardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692DB815233341A900E56204 /* TeacherDashboardTableViewCell.xib */; };
+		692DB81E23334A5200E56204 /* TeacherDashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692DB81D23334A5200E56204 /* TeacherDashboardController.swift */; };
+		692DB82023335CA300E56204 /* TeacherTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692DB81F23335CA300E56204 /* TeacherTabController.swift */; };
+		692DB8272333613B00E56204 /* SelectStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692DB8262333613B00E56204 /* SelectStudentViewController.swift */; };
+		692DB82A2333620800E56204 /* SelectStudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692DB8282333620800E56204 /* SelectStudentTableViewCell.swift */; };
+		692DB82B2333620800E56204 /* SelectStudentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692DB8292333620800E56204 /* SelectStudentTableViewCell.xib */; };
+		692DB82F2333772F00E56204 /* DailyScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692DB82D2333772F00E56204 /* DailyScheduleTableViewCell.swift */; };
+		692DB8302333772F00E56204 /* DailyScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692DB82E2333772F00E56204 /* DailyScheduleTableViewCell.xib */; };
+		692DB8322333775100E56204 /* DailyScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692DB8312333775100E56204 /* DailyScheduleViewController.swift */; };
+		692DB8342333777300E56204 /* DSHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692DB8332333777300E56204 /* DSHeader.swift */; };
+		692DB8362333778000E56204 /* DSHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692DB8352333778000E56204 /* DSHeader.xib */; };
+		692DB83B23337C4C00E56204 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692DB83A23337C4C00E56204 /* MenuController.swift */; };
+		692DB83D2333888000E56204 /* StudentAttandanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692DB83C2333888000E56204 /* StudentAttandanceController.swift */; };
+		692DB841233389F200E56204 /* Student_AttendanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692DB83F233389F200E56204 /* Student_AttendanceCell.swift */; };
+		692DB842233389F200E56204 /* Student_AttendanceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692DB840233389F200E56204 /* Student_AttendanceCell.xib */; };
+		692DB84423338A2D00E56204 /* StudentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692DB84323338A2D00E56204 /* StudentHeaderView.swift */; };
+		692DB84623338A3800E56204 /* StudentHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692DB84523338A3800E56204 /* StudentHeaderView.xib */; };
+		692DB8482333A0F400E56204 /* TeacherAssignmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692DB8472333A0F400E56204 /* TeacherAssignmentController.swift */; };
+		693315CE22DCB63F00B43666 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693315CD22DCB63F00B43666 /* AlertManager.swift */; };
+		693315D022DCB66F00B43666 /* ProgressLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693315CF22DCB66F00B43666 /* ProgressLoader.swift */; };
+		693E25AA23ACF5F2000F9E94 /* FeedbackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E25A923ACF5F2000F9E94 /* FeedbackController.swift */; };
+		693E25AD23ACF82C000F9E94 /* DIYCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E25AC23ACF82C000F9E94 /* DIYCalendarCell.swift */; };
+		693E6C88233B23590073C9D5 /* TeacherCoreDatacontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E6C87233B23590073C9D5 /* TeacherCoreDatacontroller.swift */; };
+		693E6C8E233B30140073C9D5 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693E6C8D233B30140073C9D5 /* Singleton.swift */; };
+		6945E95423978ED800FCA718 /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6945E95223978ED800FCA718 /* GalleryTableViewCell.swift */; };
+		6945E95523978ED800FCA718 /* GalleryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6945E95323978ED800FCA718 /* GalleryTableViewCell.xib */; };
+		6945E9572397C24400FCA718 /* ThumbCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6945E9562397C24400FCA718 /* ThumbCell.swift */; };
+		6945E9592397C8F900FCA718 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6945E9582397C8F900FCA718 /* GoogleService-Info.plist */; };
+		6948D1D9237E626500B37B5F /* StudentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948D1D8237E626500B37B5F /* StudentListViewController.swift */; };
+		6948DD5723C444780016941F /* RecentChatHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948DD5623C444780016941F /* RecentChatHistoryController.swift */; };
+		6948DD5A23C45A8B0016941F /* RecentChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948DD5823C45A8B0016941F /* RecentChatCell.swift */; };
+		6948DD5B23C45A8B0016941F /* RecentChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6948DD5923C45A8B0016941F /* RecentChatCell.xib */; };
+		6949D67D23A8CF6700C3BB94 /* UploadCircularSyllabusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6949D67C23A8CF6700C3BB94 /* UploadCircularSyllabusController.swift */; };
+		6949D67F23A8E4B400C3BB94 /* CircularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6949D67E23A8E4B400C3BB94 /* CircularViewController.swift */; };
+		6949EB8B23B1F81D00271AF3 /* HomeWorkReportcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6949EB8A23B1F81D00271AF3 /* HomeWorkReportcontroller.swift */; };
+		694AF45723B48AB100746580 /* UserProfile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694AF45523B48AB100746580 /* UserProfile+CoreDataClass.swift */; };
+		694AF45823B48AB100746580 /* UserProfile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694AF45623B48AB100746580 /* UserProfile+CoreDataProperties.swift */; };
+		694BFA532383FEA200D4E5BB /* AttachmentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694BFA522383FEA100D4E5BB /* AttachmentHandler.swift */; };
+		694C4005237D178B00A9CCBB /* UploadHomeWorkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C4004237D178B00A9CCBB /* UploadHomeWorkController.swift */; };
+		694D1AF7238E70BD009FA199 /* SelectStudentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694D1AF6238E70BD009FA199 /* SelectStudentController.swift */; };
+		694E6CE4237C0762002E6451 /* FacultyHomeWorkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694E6CE3237C0762002E6451 /* FacultyHomeWorkController.swift */; };
+		694ED7D523953CBE0058945F /* FacultyProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698AA309233C99120009CA5E /* FacultyProfileCell.swift */; };
+		695314E0239A2C9700C96C9C /* CustomNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695314DF239A2C9700C96C9C /* CustomNotificationController.swift */; };
+		6955ACF62398E27D000FD191 /* ApplyLeaveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6955ACF52398E27D000FD191 /* ApplyLeaveController.swift */; };
+		695B9D2523ACC67C00D17854 /* StudentHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B9D2423ACC67C00D17854 /* StudentHomeController.swift */; };
+		695B9D2A23ACC94900D17854 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B9D2823ACC94900D17854 /* HomeCollectionViewCell.swift */; };
+		695B9D2B23ACC94900D17854 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 695B9D2923ACC94900D17854 /* HomeCollectionViewCell.xib */; };
+		695B9D2D23ACDE8100D17854 /* TeacherHomeControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695B9D2C23ACDE8100D17854 /* TeacherHomeControllerViewController.swift */; };
+		696273B923AA20E0002F0D23 /* ChangePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696273B823AA20E0002F0D23 /* ChangePasswordController.swift */; };
+		696273BB23AA4575002F0D23 /* GetAttendanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696273BA23AA4575002F0D23 /* GetAttendanceController.swift */; };
+		698AA30C233C99120009CA5E /* FacultyProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 698AA30A233C99120009CA5E /* FacultyProfileCell.xib */; };
+		698AA30E233CC9F10009CA5E /* FacultyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698AA30D233CC9F00009CA5E /* FacultyHeaderView.swift */; };
+		698AA310233CCA040009CA5E /* FacultyHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 698AA30F233CCA040009CA5E /* FacultyHeaderView.xib */; };
+		698F029522F95CF8007DC51C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F029422F95CF8007DC51C /* TabBarViewController.swift */; };
+		698F029922F99B89007DC51C /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F029822F99B88007DC51C /* CircularProgressBar.swift */; };
+		698F029D22F9ACA0007DC51C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F029C22F9ACA0007DC51C /* Date.swift */; };
+		69964F4122DC5EB700B9B103 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69964F4022DC5EB700B9B103 /* AppDelegate.swift */; };
+		69964F4622DC5EB700B9B103 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69964F4422DC5EB700B9B103 /* Main.storyboard */; };
+		69964F4922DC5EB700B9B103 /* eLiteSIS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69964F4722DC5EB700B9B103 /* eLiteSIS.xcdatamodeld */; };
+		69964F4B22DC5EB900B9B103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69964F4A22DC5EB900B9B103 /* Assets.xcassets */; };
+		69964F4E22DC5EB900B9B103 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69964F4C22DC5EB900B9B103 /* LaunchScreen.storyboard */; };
+		69964F5922DC5EB900B9B103 /* eLiteSISTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69964F5822DC5EB900B9B103 /* eLiteSISTests.swift */; };
+		69964F6422DC5EB900B9B103 /* eLiteSISUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69964F6322DC5EB900B9B103 /* eLiteSISUITests.swift */; };
+		69964F7222DC601D00B9B103 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69964F7122DC601D00B9B103 /* LoginViewController.swift */; };
+		6997073522F3FA24004F68F8 /* HolidayListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6997073422F3FA24004F68F8 /* HolidayListController.swift */; };
+		6997073722F40339004F68F8 /* AttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6997073622F40339004F68F8 /* AttendanceViewController.swift */; };
+		6997073A22F4085D004F68F8 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6997073922F4085D004F68F8 /* EventViewController.swift */; };
+		6997073F22F40C5B004F68F8 /* TeacherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6997073E22F40C5B004F68F8 /* TeacherTableViewController.swift */; };
+		6997074622F40CBF004F68F8 /* TeacherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6997074522F40CBF004F68F8 /* TeacherTableViewCell.xib */; };
+		6997074822F40E3D004F68F8 /* TeacherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6997074722F40E3D004F68F8 /* TeacherTableViewCell.swift */; };
+		6997074E22F41505004F68F8 /* TeacherHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6997074D22F41505004F68F8 /* TeacherHeaderView.swift */; };
+		6997075022F41751004F68F8 /* TeacherHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6997074F22F41751004F68F8 /* TeacherHeaderView.xib */; };
+		6997075722F41934004F68F8 /* TeacherListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6997075522F41934004F68F8 /* TeacherListTableViewCell.swift */; };
+		6997075822F41934004F68F8 /* TeacherListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6997075622F41934004F68F8 /* TeacherListTableViewCell.xib */; };
+		6997075A22F41C2C004F68F8 /* TeacherListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6997075922F41C2C004F68F8 /* TeacherListHeaderView.swift */; };
+		6997075C22F41C62004F68F8 /* TeacherListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6997075B22F41C62004F68F8 /* TeacherListHeaderView.xib */; };
+		69AE6CA62373E27E007B4EC2 /* HomeWorkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AE6CA52373E27E007B4EC2 /* HomeWorkController.swift */; };
+		69AE6CA92373E338007B4EC2 /* HomeWorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AE6CA72373E338007B4EC2 /* HomeWorkTableViewCell.swift */; };
+		69AE6CAA2373E338007B4EC2 /* HomeWorkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AE6CA82373E338007B4EC2 /* HomeWorkTableViewCell.xib */; };
+		69AE6CB023742212007B4EC2 /* NewDashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AE6CAF23742212007B4EC2 /* NewDashboardController.swift */; };
+		69AE6CB323742AE7007B4EC2 /* homeworkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AE6CB123742AE7007B4EC2 /* homeworkCollectionViewCell.swift */; };
+		69AE6CB423742AE7007B4EC2 /* homeworkCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AE6CB223742AE7007B4EC2 /* homeworkCollectionViewCell.xib */; };
+		69B14BA42314EAC800810E5B /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B14BA32314EAC800810E5B /* UserDefault.swift */; };
+		69B14BE123155EA600810E5B /* TeacherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B14BE023155EA600810E5B /* TeacherViewController.swift */; };
+		69B2F8EA2303D44700ADFB5A /* StudyProgressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69B2F8E92303D44700ADFB5A /* StudyProgressCell.xib */; };
+		69B2F8EC2303D4DD00ADFB5A /* StudyProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B2F8EB2303D4DD00ADFB5A /* StudyProgressCell.swift */; };
+		69B2F8F523041EA400ADFB5A /* ChapterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B2F8F323041EA400ADFB5A /* ChapterTableViewCell.swift */; };
+		69B2F8F623041EA400ADFB5A /* ChapterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69B2F8F423041EA400ADFB5A /* ChapterTableViewCell.xib */; };
+		69B2F8FD2304364600ADFB5A /* ChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B2F8FC2304364600ADFB5A /* ChapterViewController.swift */; };
+		69B2F8FF23043B2100ADFB5A /* ChapterHeaderview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B2F8FE23043B2100ADFB5A /* ChapterHeaderview.swift */; };
+		69B2F90123043B4E00ADFB5A /* ChapterHeaderview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69B2F90023043B4E00ADFB5A /* ChapterHeaderview.xib */; };
+		69B3BFC02379733900A8DDA1 /* ViewMoreCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B3BFBE2379733900A8DDA1 /* ViewMoreCollectionCell.swift */; };
+		69B3BFC12379733900A8DDA1 /* ViewMoreCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69B3BFBF2379733900A8DDA1 /* ViewMoreCollectionCell.xib */; };
+		69DDA7912339D96000B7BB15 /* Timetable+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DDA78F2339D96000B7BB15 /* Timetable+CoreDataClass.swift */; };
+		69DDA7922339D96000B7BB15 /* Timetable+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DDA7902339D96000B7BB15 /* Timetable+CoreDataProperties.swift */; };
+		69E168F722F3199D00517CA8 /* HolidayListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E168F522F3199D00517CA8 /* HolidayListTableViewCell.swift */; };
+		69E168F822F3199D00517CA8 /* HolidayListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E168F622F3199D00517CA8 /* HolidayListTableViewCell.xib */; };
+		69E168FB22F31A0E00517CA8 /* HolidayListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E168FA22F31A0E00517CA8 /* HolidayListHeaderView.swift */; };
+		69E168FD22F31A3300517CA8 /* HolidayListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69E168FC22F31A3300517CA8 /* HolidayListHeaderView.xib */; };
+		69FA0FDF236ADEDF009A5B92 /* TeacherAssignmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FA0FDD236ADEDF009A5B92 /* TeacherAssignmentCell.swift */; };
+		69FA0FE0236ADEDF009A5B92 /* TeacherAssignmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69FA0FDE236ADEDF009A5B92 /* TeacherAssignmentCell.xib */; };
+		76F52D5F67E72283D5948264 /* Pods_eLiteSISTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9880E79EED62243B3A6C9646 /* Pods_eLiteSISTests.framework */; };
+		DEE8CA97C05C4D50C45533C5 /* Pods_eLiteSIS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E596B2FF3D935E76B8ACAEB /* Pods_eLiteSIS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69964F5522DC5EB900B9B103 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69964F3522DC5EB700B9B103 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69964F3C22DC5EB700B9B103;
+			remoteInfo = eLiteSIS;
+		};
+		69964F6022DC5EB900B9B103 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69964F3522DC5EB700B9B103 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69964F3C22DC5EB700B9B103;
+			remoteInfo = eLiteSIS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B37853E9432FFA1AC11EFF9 /* Pods-eLiteSISTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eLiteSISTests.release.xcconfig"; path = "Target Support Files/Pods-eLiteSISTests/Pods-eLiteSISTests.release.xcconfig"; sourceTree = "<group>"; };
+		5A13349823FE923200C716B0 /* TransportDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TransportDetailsController.swift; path = eLiteSIS/StudentPortal/TransportDetails/TransportDetailsController.swift; sourceTree = SOURCE_ROOT; };
+		5A13349B23FE926700C716B0 /* TransportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportTableViewCell.swift; sourceTree = "<group>"; };
+		5A13349C23FE926700C716B0 /* TransportTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransportTableViewCell.xib; sourceTree = "<group>"; };
+		5A5895502408E18600C53CCE /* FeeReceiptNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeeReceiptNavigationController.swift; path = eLiteSIS/FeeReceiptNavigationController.swift; sourceTree = SOURCE_ROOT; };
+		5A59029B2403A9A700C740EA /* TransportResponseRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportResponseRootClass.swift; sourceTree = "<group>"; };
+		5A59029C2403A9A700C740EA /* TransportResponseStopList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportResponseStopList.swift; sourceTree = "<group>"; };
+		5A59029D2403A9A700C740EA /* TransportResponseTransportDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportResponseTransportDetail.swift; sourceTree = "<group>"; };
+		5A5902A52403C44700C740EA /* StopRouteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StopRouteTableViewCell.swift; path = eLiteSIS/StopRouteTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		5A5902A62403C44700C740EA /* StopRouteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = StopRouteTableViewCell.xib; path = eLiteSIS/StopRouteTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		5A5902A92403E93800C740EA /* sampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleTableViewCell.swift; sourceTree = "<group>"; };
+		5A5902AA2403E93800C740EA /* sampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = sampleTableViewCell.xib; sourceTree = "<group>"; };
+		5A5902AD2403FE9D00C740EA /* EmployeeListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EmployeeListController.swift; path = eLiteSIS/TeacherPortal/PrincipleChat/EmployeeListController.swift; sourceTree = SOURCE_ROOT; };
+		5A5C2B5F24044297009E98AB /* NotificationSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSummaryCell.swift; sourceTree = "<group>"; };
+		5A5C2B6024044297009E98AB /* NotificationSummaryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationSummaryCell.xib; sourceTree = "<group>"; };
+		5A8EEDC72404E56000711941 /* NotificationSummaryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationSummaryController.swift; sourceTree = "<group>"; };
+		5A8EEDC92404EFBB00711941 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SummaryView.swift; path = eLiteSIS/SummaryView.swift; sourceTree = SOURCE_ROOT; };
+		5A8EEDCB2404EFCF00711941 /* SummaryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SummaryView.xib; sourceTree = "<group>"; };
+		5AAF9EE224064A7200694F9E /* BasicPayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPayTableViewCell.swift; sourceTree = "<group>"; };
+		5AAF9EE324064A7200694F9E /* BasicPayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicPayTableViewCell.xib; sourceTree = "<group>"; };
+		5AAF9EE624064DAA00694F9E /* BasicFeeDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicFeeDetailController.swift; sourceTree = SOURCE_ROOT; };
+		5AAF9EEF2406880400694F9E /* PayDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayDetailController.swift; sourceTree = "<group>"; };
+		5AAF9EF12406A0D800694F9E /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = eLiteSIS/WebViewController.swift; sourceTree = SOURCE_ROOT; };
+		5AAF9EF32406ABC200694F9E /* PayDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayDetailCell.swift; sourceTree = "<group>"; };
+		5AAF9EF42406ABC300694F9E /* PayDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PayDetailCell.xib; sourceTree = "<group>"; };
+		5AAF9EF92407BC8500694F9E /* FeeReceiptTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeeReceiptTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		645ABE06E339051863B155E6 /* Pods-eLiteSISUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eLiteSISUITests.release.xcconfig"; path = "Target Support Files/Pods-eLiteSISUITests/Pods-eLiteSISUITests.release.xcconfig"; sourceTree = "<group>"; };
+		69009EC4233C94AF0014EB65 /* TeacherProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherProfileController.swift; sourceTree = "<group>"; };
+		690132242338CF8900DF0B81 /* CustomPhotoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPhotoModel.swift; sourceTree = "<group>"; };
+		69022BD42355821D00E979BB /* InternetReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetReachability.swift; sourceTree = "<group>"; };
+		6902D215234204D80022D6AD /* UITableViewCellAnimationKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellAnimationKit.swift; sourceTree = "<group>"; };
+		6902D21823421E420022D6AD /* FacultyStudyProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacultyStudyProgress.swift; sourceTree = "<group>"; };
+		6908215922F167A200745DFA /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		6908215B22F16B3100745DFA /* MoreHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreHeaderView.xib; sourceTree = "<group>"; };
+		6908216222F16D5500745DFA /* MoreHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreHeaderView.swift; sourceTree = "<group>"; };
+		6908216422F1706300745DFA /* MoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
+		6908216A22F18F3400745DFA /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		6908216C22F19C9800745DFA /* DashBoardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardController.swift; sourceTree = "<group>"; };
+		6908217122F1A5E800745DFA /* ProfileTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableTableViewController.swift; sourceTree = "<group>"; };
+		6908217B22F1A8D900745DFA /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		6908217D22F1AB3D00745DFA /* ProfileHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
+		6908217F22F1B27F00745DFA /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		6908218122F1B34100745DFA /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		6908218922F1C0AE00745DFA /* HealthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthHeaderView.swift; sourceTree = "<group>"; };
+		6908218F22F1C3E000745DFA /* HealthReportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthReportTableViewCell.swift; sourceTree = "<group>"; };
+		6908219122F1C61000745DFA /* HealthHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthHeaderView.xib; sourceTree = "<group>"; };
+		6908219322F1C7B300745DFA /* HealthReportTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HealthReportTableViewCell.xib; sourceTree = "<group>"; };
+		690BAABF233E015400346892 /* StudentFacultyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentFacultyController.swift; sourceTree = "<group>"; };
+		690D0406237D32640074EC65 /* FacultyDiscussionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FacultyDiscussionViewController.swift; path = eLiteSIS/TeacherPortal/FacultyChat/FacultyDiscussionViewController.swift; sourceTree = SOURCE_ROOT; };
+		690EE47A231F901C000776CF /* dashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboardTableViewCell.swift; sourceTree = "<group>"; };
+		690EE47B231F901C000776CF /* dashboardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = dashboardTableViewCell.xib; sourceTree = "<group>"; };
+		690F59BA23389B21005E5DBF /* INSPhotoGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = INSPhotoGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		690F59BC2338A613005E5DBF /* ExampleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCollectionViewCell.swift; sourceTree = "<group>"; };
+		690F59C22338BFBA005E5DBF /* CustomOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomOverlayView.xib; sourceTree = "<group>"; };
+		690F59C32338BFBA005E5DBF /* CustomOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOverlayView.swift; sourceTree = "<group>"; };
+		690FFBA32302EFE00067CEDE /* StudyProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyProgressController.swift; sourceTree = "<group>"; };
+		691025E0230C0D4D00C1E919 /* SenderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderTableViewCell.swift; sourceTree = "<group>"; };
+		691025E1230C0D4E00C1E919 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		691025E2230C0D4E00C1E919 /* ReceiverTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiverTableViewCell.swift; sourceTree = "<group>"; };
+		6910DC7C230D60BC0078445A /* chevron-up.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "chevron-up.pdf"; sourceTree = "<group>"; };
+		6910DC7E230D7C5D0078445A /* eLiteSIS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = eLiteSIS.entitlements; sourceTree = "<group>"; };
+		6910FDD92321042B00354BE2 /* StudyProgessHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyProgessHeaderView.swift; sourceTree = "<group>"; };
+		6910FDDB2321043400354BE2 /* StudyProgessHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudyProgessHeaderView.xib; sourceTree = "<group>"; };
+		6917132F230679F100AFDFF3 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
+		69171330230679F100AFDFF3 /* MoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreTableViewCell.xib; sourceTree = "<group>"; };
+		69171338230680BD00AFDFF3 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
+		6917133A2306889000AFDFF3 /* TimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
+		6917133C2306914200AFDFF3 /* TimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewCell.swift; sourceTree = "<group>"; };
+		6917133D2306914200AFDFF3 /* TimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeTableViewCell.xib; sourceTree = "<group>"; };
+		691713442306A26900AFDFF3 /* TimeTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableHeaderView.swift; sourceTree = "<group>"; };
+		691713462306A3F200AFDFF3 /* TimeTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeTableHeaderView.xib; sourceTree = "<group>"; };
+		691713492306B33D00AFDFF3 /* DiscussionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionViewController.swift; sourceTree = "<group>"; };
+		6921A7FE22F7F299008DF4AA /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		6921A80122F812F5008DF4AA /* HealthReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthReportViewController.swift; sourceTree = "<group>"; };
+		6921A80322F83D96008DF4AA /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+		6921A80B22F85AA3008DF4AA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6921C787230A67D0008BB59D /* TableSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSection.swift; sourceTree = "<group>"; };
+		6921C78F230AB0D5008BB59D /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		6921C790230AB0D5008BB59D /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
+		6921D90322FC1B5000E9B587 /* RadarMarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarMarkerView.swift; sourceTree = "<group>"; };
+		6921D90422FC1B5000E9B587 /* XYMarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYMarkerView.swift; sourceTree = "<group>"; };
+		6921D90522FC1B5100E9B587 /* BalloonMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalloonMarker.swift; sourceTree = "<group>"; };
+		692B71AA22F2A9E9004031BE /* AssignmentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentTableViewController.swift; sourceTree = "<group>"; };
+		692B71AF22F2AA30004031BE /* AssingnmentHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssingnmentHeaderView.xib; sourceTree = "<group>"; };
+		692B71B322F2AE16004031BE /* AssignmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentTableViewCell.swift; sourceTree = "<group>"; };
+		692B71B522F2AE3C004031BE /* AssignmentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentHeaderView.swift; sourceTree = "<group>"; };
+		692B71B722F2B74C004031BE /* AssignmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssignmentTableViewCell.xib; sourceTree = "<group>"; };
+		692B71B922F2C19F004031BE /* PinBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinBoardViewController.swift; sourceTree = "<group>"; };
+		692B71BC22F2C4C6004031BE /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		692B71BF22F2CA0B004031BE /* ScoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreController.swift; sourceTree = "<group>"; };
+		692B71C222F2CA49004031BE /* PerformanceScoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceScoreController.swift; sourceTree = "<group>"; };
+		692B71C422F2DBB5004031BE /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		692B71C722F2E35A004031BE /* ImageGalleryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryController.swift; sourceTree = "<group>"; };
+		692B71CB22F3097E004031BE /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		692B71CD22F3098B004031BE /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
+		692B71CF22F30B6D004031BE /* PerformanceHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerformanceHeaderView.xib; sourceTree = "<group>"; };
+		692B71D122F30E61004031BE /* PerformanceHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceHeaderView.swift; sourceTree = "<group>"; };
+		692B71D322F31007004031BE /* PerformanceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerformanceTableViewCell.xib; sourceTree = "<group>"; };
+		692B71D522F3101B004031BE /* PerformanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTableViewCell.swift; sourceTree = "<group>"; };
+		692B9D3D231E41E2008D8878 /* GetAvailableTimingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAvailableTimingController.swift; sourceTree = "<group>"; };
+		692B9D40231E457C008D8878 /* GetTimeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTimeHeaderView.swift; sourceTree = "<group>"; };
+		692B9D42231E4586008D8878 /* GetTimeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GetTimeHeaderView.xib; sourceTree = "<group>"; };
+		692B9D44231E467D008D8878 /* GetTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTimeTableViewCell.swift; sourceTree = "<group>"; };
+		692B9D45231E467D008D8878 /* GetTimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GetTimeTableViewCell.xib; sourceTree = "<group>"; };
+		692C5A47230E94D300ECEFC6 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		692C5A48230E94D300ECEFC6 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
+		692D5A1F2334B235007828C7 /* dashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboardCollectionViewCell.swift; sourceTree = "<group>"; };
+		692D5A202334B235007828C7 /* dashboardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = dashboardCollectionViewCell.xib; sourceTree = "<group>"; };
+		692D5A252334ED0E007828C7 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		692DB814233341A900E56204 /* TeacherDashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherDashboardTableViewCell.swift; sourceTree = "<group>"; };
+		692DB815233341A900E56204 /* TeacherDashboardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherDashboardTableViewCell.xib; sourceTree = "<group>"; };
+		692DB81D23334A5200E56204 /* TeacherDashboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherDashboardController.swift; sourceTree = "<group>"; };
+		692DB81F23335CA300E56204 /* TeacherTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherTabController.swift; sourceTree = "<group>"; };
+		692DB8262333613B00E56204 /* SelectStudentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStudentViewController.swift; sourceTree = "<group>"; };
+		692DB8282333620800E56204 /* SelectStudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStudentTableViewCell.swift; sourceTree = "<group>"; };
+		692DB8292333620800E56204 /* SelectStudentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectStudentTableViewCell.xib; sourceTree = "<group>"; };
+		692DB82D2333772F00E56204 /* DailyScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		692DB82E2333772F00E56204 /* DailyScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DailyScheduleTableViewCell.xib; sourceTree = "<group>"; };
+		692DB8312333775100E56204 /* DailyScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScheduleViewController.swift; sourceTree = "<group>"; };
+		692DB8332333777300E56204 /* DSHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSHeader.swift; sourceTree = "<group>"; };
+		692DB8352333778000E56204 /* DSHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DSHeader.xib; sourceTree = "<group>"; };
+		692DB83A23337C4C00E56204 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		692DB83C2333888000E56204 /* StudentAttandanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAttandanceController.swift; sourceTree = "<group>"; };
+		692DB83F233389F200E56204 /* Student_AttendanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_AttendanceCell.swift; sourceTree = "<group>"; };
+		692DB840233389F200E56204 /* Student_AttendanceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Student_AttendanceCell.xib; sourceTree = "<group>"; };
+		692DB84323338A2D00E56204 /* StudentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentHeaderView.swift; sourceTree = "<group>"; };
+		692DB84523338A3800E56204 /* StudentHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentHeaderView.xib; sourceTree = "<group>"; };
+		692DB8472333A0F400E56204 /* TeacherAssignmentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherAssignmentController.swift; sourceTree = "<group>"; };
+		693315CD22DCB63F00B43666 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		693315CF22DCB66F00B43666 /* ProgressLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressLoader.swift; sourceTree = "<group>"; };
+		693E25A923ACF5F2000F9E94 /* FeedbackController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedbackController.swift; path = eLiteSIS/TeacherPortal/Feedback/FeedbackController.swift; sourceTree = SOURCE_ROOT; };
+		693E25AC23ACF82C000F9E94 /* DIYCalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIYCalendarCell.swift; sourceTree = "<group>"; };
+		693E6C87233B23590073C9D5 /* TeacherCoreDatacontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherCoreDatacontroller.swift; sourceTree = "<group>"; };
+		693E6C8D233B30140073C9D5 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		6945E95223978ED800FCA718 /* GalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewCell.swift; sourceTree = "<group>"; };
+		6945E95323978ED800FCA718 /* GalleryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryTableViewCell.xib; sourceTree = "<group>"; };
+		6945E9562397C24400FCA718 /* ThumbCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbCell.swift; sourceTree = "<group>"; };
+		6945E9582397C8F900FCA718 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6948D1D8237E626500B37B5F /* StudentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewController.swift; sourceTree = "<group>"; };
+		6948DD5623C444780016941F /* RecentChatHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecentChatHistoryController.swift; path = eLiteSIS/RecentChatHistoryController.swift; sourceTree = SOURCE_ROOT; };
+		6948DD5823C45A8B0016941F /* RecentChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentChatCell.swift; sourceTree = "<group>"; };
+		6948DD5923C45A8B0016941F /* RecentChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentChatCell.xib; sourceTree = "<group>"; };
+		6949D67C23A8CF6700C3BB94 /* UploadCircularSyllabusController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UploadCircularSyllabusController.swift; path = eLiteSIS/UploadCircularSyllabusController.swift; sourceTree = "<group>"; };
+		6949D67E23A8E4B400C3BB94 /* CircularViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularViewController.swift; sourceTree = "<group>"; };
+		6949EB8A23B1F81D00271AF3 /* HomeWorkReportcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeWorkReportcontroller.swift; path = eLiteSIS/HomeWorkReportcontroller.swift; sourceTree = "<group>"; };
+		694AF45523B48AB100746580 /* UserProfile+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserProfile+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		694AF45623B48AB100746580 /* UserProfile+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserProfile+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		694BFA522383FEA100D4E5BB /* AttachmentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttachmentHandler.swift; sourceTree = "<group>"; };
+		694C4004237D178B00A9CCBB /* UploadHomeWorkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UploadHomeWorkController.swift; path = eLiteSIS/WebService/UploadHomeWorkController.swift; sourceTree = "<group>"; };
+		694D1AF6238E70BD009FA199 /* SelectStudentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SelectStudentController.swift; path = eLiteSIS/SelectStudentController.swift; sourceTree = SOURCE_ROOT; };
+		694E6CE3237C0762002E6451 /* FacultyHomeWorkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacultyHomeWorkController.swift; sourceTree = SOURCE_ROOT; };
+		695314DF239A2C9700C96C9C /* CustomNotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNotificationController.swift; sourceTree = SOURCE_ROOT; };
+		6955ACF52398E27D000FD191 /* ApplyLeaveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ApplyLeaveController.swift; path = eLiteSIS/ApplyLeaveController.swift; sourceTree = SOURCE_ROOT; };
+		695B9D2423ACC67C00D17854 /* StudentHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentHomeController.swift; sourceTree = "<group>"; };
+		695B9D2823ACC94900D17854 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		695B9D2923ACC94900D17854 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
+		695B9D2C23ACDE8100D17854 /* TeacherHomeControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TeacherHomeControllerViewController.swift; path = eLiteSIS/TeacherHomeControllerViewController.swift; sourceTree = SOURCE_ROOT; };
+		696273B823AA20E0002F0D23 /* ChangePasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChangePasswordController.swift; path = eLiteSIS/ChangePasswordController.swift; sourceTree = SOURCE_ROOT; };
+		696273BA23AA4575002F0D23 /* GetAttendanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GetAttendanceController.swift; path = eLiteSIS/GetAttendanceController.swift; sourceTree = SOURCE_ROOT; };
+		698AA309233C99120009CA5E /* FacultyProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacultyProfileCell.swift; sourceTree = "<group>"; };
+		698AA30A233C99120009CA5E /* FacultyProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FacultyProfileCell.xib; sourceTree = "<group>"; };
+		698AA30D233CC9F00009CA5E /* FacultyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacultyHeaderView.swift; sourceTree = "<group>"; };
+		698AA30F233CCA040009CA5E /* FacultyHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FacultyHeaderView.xib; sourceTree = "<group>"; };
+		698F029422F95CF8007DC51C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		698F029822F99B88007DC51C /* CircularProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
+		698F029C22F9ACA0007DC51C /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		69964F3D22DC5EB700B9B103 /* Shivalik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shivalik.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69964F4022DC5EB700B9B103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69964F4522DC5EB700B9B103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69964F4822DC5EB700B9B103 /* eLiteSIS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eLiteSIS.xcdatamodel; sourceTree = "<group>"; };
+		69964F4A22DC5EB900B9B103 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69964F4D22DC5EB900B9B103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69964F4F22DC5EB900B9B103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69964F5422DC5EB900B9B103 /* eLiteSISTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eLiteSISTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69964F5822DC5EB900B9B103 /* eLiteSISTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eLiteSISTests.swift; sourceTree = "<group>"; };
+		69964F5A22DC5EB900B9B103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69964F5F22DC5EB900B9B103 /* eLiteSISUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eLiteSISUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69964F6322DC5EB900B9B103 /* eLiteSISUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eLiteSISUITests.swift; sourceTree = "<group>"; };
+		69964F6522DC5EB900B9B103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69964F7122DC601D00B9B103 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6997073422F3FA24004F68F8 /* HolidayListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayListController.swift; sourceTree = "<group>"; };
+		6997073622F40339004F68F8 /* AttendanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceViewController.swift; sourceTree = "<group>"; };
+		6997073922F4085D004F68F8 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		6997073E22F40C5B004F68F8 /* TeacherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherTableViewController.swift; sourceTree = "<group>"; };
+		6997074522F40CBF004F68F8 /* TeacherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherTableViewCell.xib; sourceTree = "<group>"; };
+		6997074722F40E3D004F68F8 /* TeacherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherTableViewCell.swift; sourceTree = "<group>"; };
+		6997074D22F41505004F68F8 /* TeacherHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherHeaderView.swift; sourceTree = "<group>"; };
+		6997074F22F41751004F68F8 /* TeacherHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherHeaderView.xib; sourceTree = "<group>"; };
+		6997075522F41934004F68F8 /* TeacherListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherListTableViewCell.swift; sourceTree = "<group>"; };
+		6997075622F41934004F68F8 /* TeacherListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherListTableViewCell.xib; sourceTree = "<group>"; };
+		6997075922F41C2C004F68F8 /* TeacherListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherListHeaderView.swift; sourceTree = "<group>"; };
+		6997075B22F41C62004F68F8 /* TeacherListHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherListHeaderView.xib; sourceTree = "<group>"; };
+		69AE6CA52373E27E007B4EC2 /* HomeWorkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkController.swift; sourceTree = "<group>"; };
+		69AE6CA72373E338007B4EC2 /* HomeWorkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkTableViewCell.swift; sourceTree = "<group>"; };
+		69AE6CA82373E338007B4EC2 /* HomeWorkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeWorkTableViewCell.xib; sourceTree = "<group>"; };
+		69AE6CAF23742212007B4EC2 /* NewDashboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewDashboardController.swift; path = eLiteSIS/StudentPortal/Login/LoginController/NewDashboardController.swift; sourceTree = SOURCE_ROOT; };
+		69AE6CB123742AE7007B4EC2 /* homeworkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = homeworkCollectionViewCell.swift; path = eLiteSIS/TeacherPortal/TeacherDashboard/homeworkCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		69AE6CB223742AE7007B4EC2 /* homeworkCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = homeworkCollectionViewCell.xib; path = eLiteSIS/TeacherPortal/TeacherDashboard/homeworkCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
+		69B14BA32314EAC800810E5B /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		69B14BE023155EA600810E5B /* TeacherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherViewController.swift; sourceTree = "<group>"; };
+		69B2F8E92303D44700ADFB5A /* StudyProgressCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudyProgressCell.xib; sourceTree = "<group>"; };
+		69B2F8EB2303D4DD00ADFB5A /* StudyProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyProgressCell.swift; sourceTree = "<group>"; };
+		69B2F8F323041EA400ADFB5A /* ChapterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterTableViewCell.swift; sourceTree = "<group>"; };
+		69B2F8F423041EA400ADFB5A /* ChapterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChapterTableViewCell.xib; sourceTree = "<group>"; };
+		69B2F8FC2304364600ADFB5A /* ChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterViewController.swift; sourceTree = "<group>"; };
+		69B2F8FE23043B2100ADFB5A /* ChapterHeaderview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterHeaderview.swift; sourceTree = "<group>"; };
+		69B2F90023043B4E00ADFB5A /* ChapterHeaderview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChapterHeaderview.xib; sourceTree = "<group>"; };
+		69B3BFBE2379733900A8DDA1 /* ViewMoreCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMoreCollectionCell.swift; sourceTree = SOURCE_ROOT; };
+		69B3BFBF2379733900A8DDA1 /* ViewMoreCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewMoreCollectionCell.xib; sourceTree = SOURCE_ROOT; };
+		69DDA78F2339D96000B7BB15 /* Timetable+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timetable+CoreDataClass.swift"; sourceTree = "<group>"; };
+		69DDA7902339D96000B7BB15 /* Timetable+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timetable+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		69E168F522F3199D00517CA8 /* HolidayListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayListTableViewCell.swift; sourceTree = "<group>"; };
+		69E168F622F3199D00517CA8 /* HolidayListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HolidayListTableViewCell.xib; sourceTree = "<group>"; };
+		69E168FA22F31A0E00517CA8 /* HolidayListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayListHeaderView.swift; sourceTree = "<group>"; };
+		69E168FC22F31A3300517CA8 /* HolidayListHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HolidayListHeaderView.xib; sourceTree = "<group>"; };
+		69FA0FDD236ADEDF009A5B92 /* TeacherAssignmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherAssignmentCell.swift; sourceTree = "<group>"; };
+		69FA0FDE236ADEDF009A5B92 /* TeacherAssignmentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherAssignmentCell.xib; sourceTree = "<group>"; };
+		7E596B2FF3D935E76B8ACAEB /* Pods_eLiteSIS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eLiteSIS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9880E79EED62243B3A6C9646 /* Pods_eLiteSISTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eLiteSISTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98F66D81175723A546B7ECF8 /* Pods-eLiteSIS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eLiteSIS.debug.xcconfig"; path = "Target Support Files/Pods-eLiteSIS/Pods-eLiteSIS.debug.xcconfig"; sourceTree = "<group>"; };
+		BC4361A35AEA7C87D0DB7440 /* Pods_eLiteSISUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eLiteSISUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1FFCD570310D77E43D1A47 /* Pods-eLiteSISTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eLiteSISTests.debug.xcconfig"; path = "Target Support Files/Pods-eLiteSISTests/Pods-eLiteSISTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF03D731806A4303295ECCF6 /* Pods-eLiteSIS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eLiteSIS.release.xcconfig"; path = "Target Support Files/Pods-eLiteSIS/Pods-eLiteSIS.release.xcconfig"; sourceTree = "<group>"; };
+		FA9059207F649D2AE7CB7AA7 /* Pods-eLiteSISUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eLiteSISUITests.debug.xcconfig"; path = "Target Support Files/Pods-eLiteSISUITests/Pods-eLiteSISUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69964F3A22DC5EB700B9B103 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				690F59BB23389B21005E5DBF /* INSPhotoGallery.framework in Frameworks */,
+				6921A80C22F85AA3008DF4AA /* CoreData.framework in Frameworks */,
+				DEE8CA97C05C4D50C45533C5 /* Pods_eLiteSIS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69964F5122DC5EB900B9B103 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F52D5F67E72283D5948264 /* Pods_eLiteSISTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69964F5C22DC5EB900B9B103 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FEB59823256D3846717B16B /* Pods_eLiteSISUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A13349A23FE923B00C716B0 /* TransportDetails */ = {
+			isa = PBXGroup;
+			children = (
+				5A5902A52403C44700C740EA /* StopRouteTableViewCell.swift */,
+				5A5902A62403C44700C740EA /* StopRouteTableViewCell.xib */,
+				5A13349823FE923200C716B0 /* TransportDetailsController.swift */,
+				5A13349B23FE926700C716B0 /* TransportTableViewCell.swift */,
+				5A13349C23FE926700C716B0 /* TransportTableViewCell.xib */,
+				5A59029B2403A9A700C740EA /* TransportResponseRootClass.swift */,
+				5A59029C2403A9A700C740EA /* TransportResponseStopList.swift */,
+				5A59029D2403A9A700C740EA /* TransportResponseTransportDetail.swift */,
+			);
+			path = TransportDetails;
+			sourceTree = "<group>";
+		};
+		5A5902AF2403FEA300C740EA /* PrincipleChat */ = {
+			isa = PBXGroup;
+			children = (
+				5A5902AD2403FE9D00C740EA /* EmployeeListController.swift */,
+			);
+			path = PrincipleChat;
+			sourceTree = "<group>";
+		};
+		5A5C2B5E24044241009E98AB /* NotificationSummary */ = {
+			isa = PBXGroup;
+			children = (
+				5A8EEDC92404EFBB00711941 /* SummaryView.swift */,
+				5A8EEDCB2404EFCF00711941 /* SummaryView.xib */,
+				5A8EEDC72404E56000711941 /* NotificationSummaryController.swift */,
+				5A5C2B5F24044297009E98AB /* NotificationSummaryCell.swift */,
+				5A5C2B6024044297009E98AB /* NotificationSummaryCell.xib */,
+			);
+			path = NotificationSummary;
+			sourceTree = "<group>";
+		};
+		5AAF9EDB2406469200694F9E /* FeePayment */ = {
+			isa = PBXGroup;
+			children = (
+				5A5895502408E18600C53CCE /* FeeReceiptNavigationController.swift */,
+				5AAF9EF92407BC8500694F9E /* FeeReceiptTableViewController.swift */,
+				5AAF9EF12406A0D800694F9E /* WebViewController.swift */,
+				5AAF9EE624064DAA00694F9E /* BasicFeeDetailController.swift */,
+				5AAF9EEF2406880400694F9E /* PayDetailController.swift */,
+				5AAF9EF32406ABC200694F9E /* PayDetailCell.swift */,
+				5AAF9EF42406ABC300694F9E /* PayDetailCell.xib */,
+				5AAF9EE224064A7200694F9E /* BasicPayTableViewCell.swift */,
+				5AAF9EE324064A7200694F9E /* BasicPayTableViewCell.xib */,
+			);
+			path = FeePayment;
+			sourceTree = "<group>";
+		};
+		6902D21723421E110022D6AD /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				6902D21823421E420022D6AD /* FacultyStudyProgress.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		6908216E22F19C9E00745DFA /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				695B9D2823ACC94900D17854 /* HomeCollectionViewCell.swift */,
+				695B9D2923ACC94900D17854 /* HomeCollectionViewCell.xib */,
+				695B9D2423ACC67C00D17854 /* StudentHomeController.swift */,
+				69B3BFBE2379733900A8DDA1 /* ViewMoreCollectionCell.swift */,
+				69B3BFBF2379733900A8DDA1 /* ViewMoreCollectionCell.xib */,
+				69AE6CB123742AE7007B4EC2 /* homeworkCollectionViewCell.swift */,
+				69AE6CB223742AE7007B4EC2 /* homeworkCollectionViewCell.xib */,
+				69AE6CAF23742212007B4EC2 /* NewDashboardController.swift */,
+				6908216C22F19C9800745DFA /* DashBoardController.swift */,
+				690EE47A231F901C000776CF /* dashboardTableViewCell.swift */,
+				690EE47B231F901C000776CF /* dashboardTableViewCell.xib */,
+			);
+			path = DashBoard;
+			sourceTree = "<group>";
+		};
+		6908218322F1B3FA00745DFA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				6908217B22F1A8D900745DFA /* ProfileHeaderView.swift */,
+				6908217D22F1AB3D00745DFA /* ProfileHeaderView.xib */,
+				6908217F22F1B27F00745DFA /* ProfileTableViewCell.swift */,
+				6908218122F1B34100745DFA /* ProfileTableViewCell.xib */,
+				6908217122F1A5E800745DFA /* ProfileTableTableViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		6908218622F1BD5800745DFA /* HealthReport */ = {
+			isa = PBXGroup;
+			children = (
+				6921A80122F812F5008DF4AA /* HealthReportViewController.swift */,
+				6908218F22F1C3E000745DFA /* HealthReportTableViewCell.swift */,
+				6908219322F1C7B300745DFA /* HealthReportTableViewCell.xib */,
+				6908219122F1C61000745DFA /* HealthHeaderView.xib */,
+				6908218922F1C0AE00745DFA /* HealthHeaderView.swift */,
+			);
+			path = HealthReport;
+			sourceTree = "<group>";
+		};
+		690BAAC5233E042900346892 /* studentDashbaord */ = {
+			isa = PBXGroup;
+			children = (
+				690BAABF233E015400346892 /* StudentFacultyController.swift */,
+			);
+			path = studentDashbaord;
+			sourceTree = "<group>";
+		};
+		690D0408237D32680074EC65 /* FacultyChat */ = {
+			isa = PBXGroup;
+			children = (
+				690D0406237D32640074EC65 /* FacultyDiscussionViewController.swift */,
+				6948D1D8237E626500B37B5F /* StudentListViewController.swift */,
+			);
+			path = FacultyChat;
+			sourceTree = "<group>";
+		};
+		690FFBA52302F0D90067CEDE /* StudyProgress */ = {
+			isa = PBXGroup;
+			children = (
+				69B2F8FB23042B8500ADFB5A /* Chapter */,
+				69B2F8E92303D44700ADFB5A /* StudyProgressCell.xib */,
+				6910FDD92321042B00354BE2 /* StudyProgessHeaderView.swift */,
+				6910FDDB2321043400354BE2 /* StudyProgessHeaderView.xib */,
+				69B2F8EB2303D4DD00ADFB5A /* StudyProgressCell.swift */,
+				690FFBA32302EFE00067CEDE /* StudyProgressController.swift */,
+			);
+			path = StudyProgress;
+			sourceTree = "<group>";
+		};
+		6917133623067ECD00AFDFF3 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				698F029422F95CF8007DC51C /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		6917133723067EE000AFDFF3 /* LoginController */ = {
+			isa = PBXGroup;
+			children = (
+				69964F7122DC601D00B9B103 /* LoginViewController.swift */,
+			);
+			path = LoginController;
+			sourceTree = "<group>";
+		};
+		691713482306B10C00AFDFF3 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				696273B823AA20E0002F0D23 /* ChangePasswordController.swift */,
+				69171338230680BD00AFDFF3 /* ForgotPasswordController.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		6917134B2306B34400AFDFF3 /* Discussion */ = {
+			isa = PBXGroup;
+			children = (
+				6948DD5623C444780016941F /* RecentChatHistoryController.swift */,
+				6948DD5823C45A8B0016941F /* RecentChatCell.swift */,
+				6948DD5923C45A8B0016941F /* RecentChatCell.xib */,
+				694D1AF6238E70BD009FA199 /* SelectStudentController.swift */,
+				691025E1230C0D4E00C1E919 /* MessageTableViewCell.swift */,
+				691025E2230C0D4E00C1E919 /* ReceiverTableViewCell.swift */,
+				691025E0230C0D4D00C1E919 /* SenderTableViewCell.swift */,
+				691713492306B33D00AFDFF3 /* DiscussionViewController.swift */,
+			);
+			path = Discussion;
+			sourceTree = "<group>";
+		};
+		6921A80022F7F29D008DF4AA /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				6921A7FE22F7F299008DF4AA /* WebService.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		6921A80522F83D9B008DF4AA /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				694AF45523B48AB100746580 /* UserProfile+CoreDataClass.swift */,
+				694AF45623B48AB100746580 /* UserProfile+CoreDataProperties.swift */,
+				6921A80322F83D96008DF4AA /* CoreDataController.swift */,
+				69DDA78F2339D96000B7BB15 /* Timetable+CoreDataClass.swift */,
+				69DDA7902339D96000B7BB15 /* Timetable+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		69295B5922DC937F005E80B0 /* MoreView */ = {
+			isa = PBXGroup;
+			children = (
+				6955ACF52398E27D000FD191 /* ApplyLeaveController.swift */,
+				6908216422F1706300745DFA /* MoreTableViewController.swift */,
+				6908216222F16D5500745DFA /* MoreHeaderView.swift */,
+				6908215B22F16B3100745DFA /* MoreHeaderView.xib */,
+				6917132F230679F100AFDFF3 /* MoreTableViewCell.swift */,
+				69171330230679F100AFDFF3 /* MoreTableViewCell.xib */,
+			);
+			path = MoreView;
+			sourceTree = "<group>";
+		};
+		692B71AE22F2A9ED004031BE /* Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				6910DC7C230D60BC0078445A /* chevron-up.pdf */,
+				692B71B322F2AE16004031BE /* AssignmentTableViewCell.swift */,
+				692B71B522F2AE3C004031BE /* AssignmentHeaderView.swift */,
+				692B71AF22F2AA30004031BE /* AssingnmentHeaderView.xib */,
+				692B71B722F2B74C004031BE /* AssignmentTableViewCell.xib */,
+				692B71AA22F2A9E9004031BE /* AssignmentTableViewController.swift */,
+			);
+			path = Assignment;
+			sourceTree = "<group>";
+		};
+		692B71BB22F2C1A2004031BE /* PinBoard */ = {
+			isa = PBXGroup;
+			children = (
+				692B71B922F2C19F004031BE /* PinBoardViewController.swift */,
+			);
+			path = PinBoard;
+			sourceTree = "<group>";
+		};
+		692B71BE22F2C4CD004031BE /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				5A5C2B5E24044241009E98AB /* NotificationSummary */,
+				692B71BC22F2C4C6004031BE /* NotificationViewController.swift */,
+				692C5A47230E94D300ECEFC6 /* NotificationTableViewCell.swift */,
+				692C5A48230E94D300ECEFC6 /* NotificationTableViewCell.xib */,
+				5A5902A92403E93800C740EA /* sampleTableViewCell.swift */,
+				5A5902AA2403E93800C740EA /* sampleTableViewCell.xib */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		692B71C122F2CA11004031BE /* PerformanceScore */ = {
+			isa = PBXGroup;
+			children = (
+				6921D90522FC1B5100E9B587 /* BalloonMarker.swift */,
+				6921D90322FC1B5000E9B587 /* RadarMarkerView.swift */,
+				6921D90422FC1B5000E9B587 /* XYMarkerView.swift */,
+				692B71BF22F2CA0B004031BE /* ScoreController.swift */,
+				692B71C222F2CA49004031BE /* PerformanceScoreController.swift */,
+				692B71CF22F30B6D004031BE /* PerformanceHeaderView.xib */,
+				692B71D322F31007004031BE /* PerformanceTableViewCell.xib */,
+				692B71D522F3101B004031BE /* PerformanceTableViewCell.swift */,
+				692B71D122F30E61004031BE /* PerformanceHeaderView.swift */,
+			);
+			path = PerformanceScore;
+			sourceTree = "<group>";
+		};
+		692B71C622F2DBB8004031BE /* GalleryController */ = {
+			isa = PBXGroup;
+			children = (
+				690132242338CF8900DF0B81 /* CustomPhotoModel.swift */,
+				690F59C32338BFBA005E5DBF /* CustomOverlayView.swift */,
+				690F59C22338BFBA005E5DBF /* CustomOverlayView.xib */,
+				690F59BC2338A613005E5DBF /* ExampleCollectionViewCell.swift */,
+				6945E95223978ED800FCA718 /* GalleryTableViewCell.swift */,
+				6945E95323978ED800FCA718 /* GalleryTableViewCell.xib */,
+				692B71C722F2E35A004031BE /* ImageGalleryController.swift */,
+				692B71C422F2DBB5004031BE /* GalleryViewController.swift */,
+			);
+			path = GalleryController;
+			sourceTree = "<group>";
+		};
+		692B9D3F231E4504008D8878 /* GetTeacherTimings */ = {
+			isa = PBXGroup;
+			children = (
+				692B9D40231E457C008D8878 /* GetTimeHeaderView.swift */,
+				692B9D42231E4586008D8878 /* GetTimeHeaderView.xib */,
+				692B9D3D231E41E2008D8878 /* GetAvailableTimingController.swift */,
+				692B9D44231E467D008D8878 /* GetTimeTableViewCell.swift */,
+				692B9D45231E467D008D8878 /* GetTimeTableViewCell.xib */,
+			);
+			path = GetTeacherTimings;
+			sourceTree = "<group>";
+		};
+		692DB818233341AF00E56204 /* TeacherDashboard */ = {
+			isa = PBXGroup;
+			children = (
+				692DB8252333608000E56204 /* StudentProfile */,
+				690BAAC5233E042900346892 /* studentDashbaord */,
+				692D5A1F2334B235007828C7 /* dashboardCollectionViewCell.swift */,
+				692D5A202334B235007828C7 /* dashboardCollectionViewCell.xib */,
+				692DB814233341A900E56204 /* TeacherDashboardTableViewCell.swift */,
+				692DB81D23334A5200E56204 /* TeacherDashboardController.swift */,
+			);
+			path = TeacherDashboard;
+			sourceTree = "<group>";
+		};
+		692DB8232333603F00E56204 /* StudentPortal */ = {
+			isa = PBXGroup;
+			children = (
+				5A13349A23FE923B00C716B0 /* TransportDetails */,
+				69AE6CA42373E266007B4EC2 /* HomeWork */,
+				6921A80522F83D9B008DF4AA /* CoreData */,
+				69B2F8EE2304009700ADFB5A /* TimeTable */,
+				690FFBA52302F0D90067CEDE /* StudyProgress */,
+				6997074022F40C61004F68F8 /* Teacher */,
+				6997073B22F40864004F68F8 /* Events */,
+				6997073822F40340004F68F8 /* Attendance */,
+				69E168F922F319A500517CA8 /* HolidayList */,
+				692B71C622F2DBB8004031BE /* GalleryController */,
+				692B71C122F2CA11004031BE /* PerformanceScore */,
+				692B71BB22F2C1A2004031BE /* PinBoard */,
+				692B71AE22F2A9ED004031BE /* Assignment */,
+				6917134B2306B34400AFDFF3 /* Discussion */,
+				6908218622F1BD5800745DFA /* HealthReport */,
+				6908218322F1B3FA00745DFA /* Profile */,
+				6908216E22F19C9E00745DFA /* DashBoard */,
+				69295B5922DC937F005E80B0 /* MoreView */,
+				69964F7422DC603600B9B103 /* Login */,
+			);
+			path = StudentPortal;
+			sourceTree = "<group>";
+		};
+		692DB8242333606C00E56204 /* TeacherPortal */ = {
+			isa = PBXGroup;
+			children = (
+				5A5902AF2403FEA300C740EA /* PrincipleChat */,
+				693E25AB23ACF810000F9E94 /* Feedback */,
+				695B9D2C23ACDE8100D17854 /* TeacherHomeControllerViewController.swift */,
+				690D0408237D32680074EC65 /* FacultyChat */,
+				694E6CE5237C076C002E6451 /* FacultyHomeWork */,
+				692DB81F23335CA300E56204 /* TeacherTabController.swift */,
+				6902D21723421E110022D6AD /* New Group */,
+				698AA308233C95110009CA5E /* UserPRofile */,
+				693E6C86233B23240073C9D5 /* TeacherCoreData */,
+				692DB84A2333A10C00E56204 /* TeacherAssignment */,
+				692DB83E2333888B00E56204 /* S_Attendance */,
+				692DB83923337BBF00E56204 /* Menu */,
+				692DB82C233376FC00E56204 /* DailySchedule */,
+				692DB818233341AF00E56204 /* TeacherDashboard */,
+			);
+			path = TeacherPortal;
+			sourceTree = "<group>";
+		};
+		692DB8252333608000E56204 /* StudentProfile */ = {
+			isa = PBXGroup;
+			children = (
+				692DB8262333613B00E56204 /* SelectStudentViewController.swift */,
+				692DB8282333620800E56204 /* SelectStudentTableViewCell.swift */,
+				692DB8292333620800E56204 /* SelectStudentTableViewCell.xib */,
+			);
+			path = StudentProfile;
+			sourceTree = "<group>";
+		};
+		692DB82C233376FC00E56204 /* DailySchedule */ = {
+			isa = PBXGroup;
+			children = (
+				692DB82D2333772F00E56204 /* DailyScheduleTableViewCell.swift */,
+				692DB82E2333772F00E56204 /* DailyScheduleTableViewCell.xib */,
+				692DB8312333775100E56204 /* DailyScheduleViewController.swift */,
+				692DB8332333777300E56204 /* DSHeader.swift */,
+				692DB8352333778000E56204 /* DSHeader.xib */,
+			);
+			path = DailySchedule;
+			sourceTree = "<group>";
+		};
+		692DB83923337BBF00E56204 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				692DB83A23337C4C00E56204 /* MenuController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		692DB83E2333888B00E56204 /* S_Attendance */ = {
+			isa = PBXGroup;
+			children = (
+				692DB83C2333888000E56204 /* StudentAttandanceController.swift */,
+				692DB83F233389F200E56204 /* Student_AttendanceCell.swift */,
+				692DB840233389F200E56204 /* Student_AttendanceCell.xib */,
+				692DB84323338A2D00E56204 /* StudentHeaderView.swift */,
+				692DB84523338A3800E56204 /* StudentHeaderView.xib */,
+			);
+			path = S_Attendance;
+			sourceTree = "<group>";
+		};
+		692DB84A2333A10C00E56204 /* TeacherAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				692DB815233341A900E56204 /* TeacherDashboardTableViewCell.xib */,
+				692DB8472333A0F400E56204 /* TeacherAssignmentController.swift */,
+				69FA0FDD236ADEDF009A5B92 /* TeacherAssignmentCell.swift */,
+				69FA0FDE236ADEDF009A5B92 /* TeacherAssignmentCell.xib */,
+			);
+			path = TeacherAssignment;
+			sourceTree = "<group>";
+		};
+		693315CA22DCB5AC00B43666 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				6945E9562397C24400FCA718 /* ThumbCell.swift */,
+				694BFA522383FEA100D4E5BB /* AttachmentHandler.swift */,
+				69022BD42355821D00E979BB /* InternetReachability.swift */,
+				693E6C8D233B30140073C9D5 /* Singleton.swift */,
+				6902D215234204D80022D6AD /* UITableViewCellAnimationKit.swift */,
+				69B14BA32314EAC800810E5B /* UserDefault.swift */,
+				6921C787230A67D0008BB59D /* TableSection.swift */,
+				698F029C22F9ACA0007DC51C /* Date.swift */,
+				692D5A252334ED0E007828C7 /* Reusable.swift */,
+				698F029822F99B88007DC51C /* CircularProgressBar.swift */,
+				692B71CD22F3098B004031BE /* MyCell.xib */,
+				692B71CB22F3097E004031BE /* MyCell.swift */,
+				6908216A22F18F3400745DFA /* CardView.swift */,
+				693315CD22DCB63F00B43666 /* AlertManager.swift */,
+				693315CF22DCB66F00B43666 /* ProgressLoader.swift */,
+				6908215922F167A200745DFA /* Constant.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		693E25AB23ACF810000F9E94 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				693E25AC23ACF82C000F9E94 /* DIYCalendarCell.swift */,
+				693E25A923ACF5F2000F9E94 /* FeedbackController.swift */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		693E6C86233B23240073C9D5 /* TeacherCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				693E6C87233B23590073C9D5 /* TeacherCoreDatacontroller.swift */,
+			);
+			path = TeacherCoreData;
+			sourceTree = "<group>";
+		};
+		694E6CE5237C076C002E6451 /* FacultyHomeWork */ = {
+			isa = PBXGroup;
+			children = (
+				6949EB8A23B1F81D00271AF3 /* HomeWorkReportcontroller.swift */,
+				6949D67C23A8CF6700C3BB94 /* UploadCircularSyllabusController.swift */,
+				694C4004237D178B00A9CCBB /* UploadHomeWorkController.swift */,
+				694E6CE3237C0762002E6451 /* FacultyHomeWorkController.swift */,
+			);
+			name = FacultyHomeWork;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		695314DE239A2BCB00C96C9C /* CustomNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				696273BA23AA4575002F0D23 /* GetAttendanceController.swift */,
+				695314DF239A2C9700C96C9C /* CustomNotificationController.swift */,
+			);
+			path = CustomNotifications;
+			sourceTree = "<group>";
+		};
+		698AA308233C95110009CA5E /* UserPRofile */ = {
+			isa = PBXGroup;
+			children = (
+				698AA30D233CC9F00009CA5E /* FacultyHeaderView.swift */,
+				698AA30F233CCA040009CA5E /* FacultyHeaderView.xib */,
+				69009EC4233C94AF0014EB65 /* TeacherProfileController.swift */,
+				698AA309233C99120009CA5E /* FacultyProfileCell.swift */,
+				698AA30A233C99120009CA5E /* FacultyProfileCell.xib */,
+			);
+			path = UserPRofile;
+			sourceTree = "<group>";
+		};
+		69964F3422DC5EB700B9B103 = {
+			isa = PBXGroup;
+			children = (
+				69964F3F22DC5EB700B9B103 /* eLiteSIS */,
+				69964F5722DC5EB900B9B103 /* eLiteSISTests */,
+				69964F6222DC5EB900B9B103 /* eLiteSISUITests */,
+				69964F3E22DC5EB700B9B103 /* Products */,
+				8E0BB5CEDCFD159CC09EF447 /* Pods */,
+				D261F06694DAC0DCFB93E44D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		69964F3E22DC5EB700B9B103 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69964F3D22DC5EB700B9B103 /* Shivalik.app */,
+				69964F5422DC5EB900B9B103 /* eLiteSISTests.xctest */,
+				69964F5F22DC5EB900B9B103 /* eLiteSISUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69964F3F22DC5EB700B9B103 /* eLiteSIS */ = {
+			isa = PBXGroup;
+			children = (
+				69964F4022DC5EB700B9B103 /* AppDelegate.swift */,
+				6945E9582397C8F900FCA718 /* GoogleService-Info.plist */,
+				5AAF9EDB2406469200694F9E /* FeePayment */,
+				695314DE239A2BCB00C96C9C /* CustomNotifications */,
+				692B71BE22F2C4CD004031BE /* Notifications */,
+				6921A80022F7F29D008DF4AA /* WebService */,
+				693315CA22DCB5AC00B43666 /* Helper */,
+				692DB8242333606C00E56204 /* TeacherPortal */,
+				692DB8232333603F00E56204 /* StudentPortal */,
+				6910DC7E230D7C5D0078445A /* eLiteSIS.entitlements */,
+				69964F4422DC5EB700B9B103 /* Main.storyboard */,
+				69964F4A22DC5EB900B9B103 /* Assets.xcassets */,
+				69964F4C22DC5EB900B9B103 /* LaunchScreen.storyboard */,
+				69964F4F22DC5EB900B9B103 /* Info.plist */,
+				69964F4722DC5EB700B9B103 /* eLiteSIS.xcdatamodeld */,
+			);
+			path = eLiteSIS;
+			sourceTree = "<group>";
+		};
+		69964F5722DC5EB900B9B103 /* eLiteSISTests */ = {
+			isa = PBXGroup;
+			children = (
+				69964F5822DC5EB900B9B103 /* eLiteSISTests.swift */,
+				69964F5A22DC5EB900B9B103 /* Info.plist */,
+			);
+			path = eLiteSISTests;
+			sourceTree = "<group>";
+		};
+		69964F6222DC5EB900B9B103 /* eLiteSISUITests */ = {
+			isa = PBXGroup;
+			children = (
+				69964F6322DC5EB900B9B103 /* eLiteSISUITests.swift */,
+				69964F6522DC5EB900B9B103 /* Info.plist */,
+			);
+			path = eLiteSISUITests;
+			sourceTree = "<group>";
+		};
+		69964F7422DC603600B9B103 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				691713482306B10C00AFDFF3 /* ForgotPassword */,
+				6917133723067EE000AFDFF3 /* LoginController */,
+				6917133623067ECD00AFDFF3 /* TabBar */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6997073822F40340004F68F8 /* Attendance */ = {
+			isa = PBXGroup;
+			children = (
+				6997073622F40339004F68F8 /* AttendanceViewController.swift */,
+			);
+			path = Attendance;
+			sourceTree = "<group>";
+		};
+		6997073B22F40864004F68F8 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				6921C78F230AB0D5008BB59D /* EventTableViewCell.swift */,
+				6921C790230AB0D5008BB59D /* EventTableViewCell.xib */,
+				6997073922F4085D004F68F8 /* EventViewController.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		6997074022F40C61004F68F8 /* Teacher */ = {
+			isa = PBXGroup;
+			children = (
+				6997075422F4188A004F68F8 /* TeacherProfile */,
+				6997075322F4186F004F68F8 /* TeacherList */,
+			);
+			path = Teacher;
+			sourceTree = "<group>";
+		};
+		6997075322F4186F004F68F8 /* TeacherList */ = {
+			isa = PBXGroup;
+			children = (
+				692B9D3F231E4504008D8878 /* GetTeacherTimings */,
+				69B14BE023155EA600810E5B /* TeacherViewController.swift */,
+				6997075522F41934004F68F8 /* TeacherListTableViewCell.swift */,
+				6997075922F41C2C004F68F8 /* TeacherListHeaderView.swift */,
+				6997075B22F41C62004F68F8 /* TeacherListHeaderView.xib */,
+				6997075622F41934004F68F8 /* TeacherListTableViewCell.xib */,
+			);
+			path = TeacherList;
+			sourceTree = "<group>";
+		};
+		6997075422F4188A004F68F8 /* TeacherProfile */ = {
+			isa = PBXGroup;
+			children = (
+				6997073E22F40C5B004F68F8 /* TeacherTableViewController.swift */,
+				6997074F22F41751004F68F8 /* TeacherHeaderView.xib */,
+				6997074D22F41505004F68F8 /* TeacherHeaderView.swift */,
+				6997074522F40CBF004F68F8 /* TeacherTableViewCell.xib */,
+				6997074722F40E3D004F68F8 /* TeacherTableViewCell.swift */,
+			);
+			path = TeacherProfile;
+			sourceTree = "<group>";
+		};
+		69AE6CA42373E266007B4EC2 /* HomeWork */ = {
+			isa = PBXGroup;
+			children = (
+				69AE6CA52373E27E007B4EC2 /* HomeWorkController.swift */,
+				6949D67E23A8E4B400C3BB94 /* CircularViewController.swift */,
+				69AE6CA72373E338007B4EC2 /* HomeWorkTableViewCell.swift */,
+				69AE6CA82373E338007B4EC2 /* HomeWorkTableViewCell.xib */,
+			);
+			path = HomeWork;
+			sourceTree = "<group>";
+		};
+		69B2F8EE2304009700ADFB5A /* TimeTable */ = {
+			isa = PBXGroup;
+			children = (
+				691713462306A3F200AFDFF3 /* TimeTableHeaderView.xib */,
+				691713442306A26900AFDFF3 /* TimeTableHeaderView.swift */,
+				6917133A2306889000AFDFF3 /* TimeTableViewController.swift */,
+				6917133C2306914200AFDFF3 /* TimeTableViewCell.swift */,
+				6917133D2306914200AFDFF3 /* TimeTableViewCell.xib */,
+			);
+			path = TimeTable;
+			sourceTree = "<group>";
+		};
+		69B2F8FB23042B8500ADFB5A /* Chapter */ = {
+			isa = PBXGroup;
+			children = (
+				69B2F8FC2304364600ADFB5A /* ChapterViewController.swift */,
+				69B2F8F323041EA400ADFB5A /* ChapterTableViewCell.swift */,
+				69B2F8F423041EA400ADFB5A /* ChapterTableViewCell.xib */,
+				69B2F8FE23043B2100ADFB5A /* ChapterHeaderview.swift */,
+				69B2F90023043B4E00ADFB5A /* ChapterHeaderview.xib */,
+			);
+			path = Chapter;
+			sourceTree = "<group>";
+		};
+		69E168F922F319A500517CA8 /* HolidayList */ = {
+			isa = PBXGroup;
+			children = (
+				6997073422F3FA24004F68F8 /* HolidayListController.swift */,
+				69E168FA22F31A0E00517CA8 /* HolidayListHeaderView.swift */,
+				69E168FC22F31A3300517CA8 /* HolidayListHeaderView.xib */,
+				69E168F522F3199D00517CA8 /* HolidayListTableViewCell.swift */,
+				69E168F622F3199D00517CA8 /* HolidayListTableViewCell.xib */,
+			);
+			path = HolidayList;
+			sourceTree = "<group>";
+		};
+		8E0BB5CEDCFD159CC09EF447 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				98F66D81175723A546B7ECF8 /* Pods-eLiteSIS.debug.xcconfig */,
+				EF03D731806A4303295ECCF6 /* Pods-eLiteSIS.release.xcconfig */,
+				CE1FFCD570310D77E43D1A47 /* Pods-eLiteSISTests.debug.xcconfig */,
+				4B37853E9432FFA1AC11EFF9 /* Pods-eLiteSISTests.release.xcconfig */,
+				FA9059207F649D2AE7CB7AA7 /* Pods-eLiteSISUITests.debug.xcconfig */,
+				645ABE06E339051863B155E6 /* Pods-eLiteSISUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D261F06694DAC0DCFB93E44D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				690F59BA23389B21005E5DBF /* INSPhotoGallery.framework */,
+				6921A80B22F85AA3008DF4AA /* CoreData.framework */,
+				7E596B2FF3D935E76B8ACAEB /* Pods_eLiteSIS.framework */,
+				9880E79EED62243B3A6C9646 /* Pods_eLiteSISTests.framework */,
+				BC4361A35AEA7C87D0DB7440 /* Pods_eLiteSISUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69964F3C22DC5EB700B9B103 /* eLiteSIS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69964F6822DC5EB900B9B103 /* Build configuration list for PBXNativeTarget "eLiteSIS" */;
+			buildPhases = (
+				87A3FD7604F7CC5528F1FB2E /* [CP] Check Pods Manifest.lock */,
+				69964F3922DC5EB700B9B103 /* Sources */,
+				69964F3A22DC5EB700B9B103 /* Frameworks */,
+				69964F3B22DC5EB700B9B103 /* Resources */,
+				E0D79FD5590A4B7EBA7634FF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eLiteSIS;
+			productName = eLiteSIS;
+			productReference = 69964F3D22DC5EB700B9B103 /* Shivalik.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69964F5322DC5EB900B9B103 /* eLiteSISTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69964F6B22DC5EB900B9B103 /* Build configuration list for PBXNativeTarget "eLiteSISTests" */;
+			buildPhases = (
+				581CF3320F99797E15CCDF62 /* [CP] Check Pods Manifest.lock */,
+				69964F5022DC5EB900B9B103 /* Sources */,
+				69964F5122DC5EB900B9B103 /* Frameworks */,
+				69964F5222DC5EB900B9B103 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69964F5622DC5EB900B9B103 /* PBXTargetDependency */,
+			);
+			name = eLiteSISTests;
+			productName = eLiteSISTests;
+			productReference = 69964F5422DC5EB900B9B103 /* eLiteSISTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		69964F5E22DC5EB900B9B103 /* eLiteSISUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69964F6E22DC5EB900B9B103 /* Build configuration list for PBXNativeTarget "eLiteSISUITests" */;
+			buildPhases = (
+				B91B4D8B9775159851E99D27 /* [CP] Check Pods Manifest.lock */,
+				69964F5B22DC5EB900B9B103 /* Sources */,
+				69964F5C22DC5EB900B9B103 /* Frameworks */,
+				69964F5D22DC5EB900B9B103 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69964F6122DC5EB900B9B103 /* PBXTargetDependency */,
+			);
+			name = eLiteSISUITests;
+			productName = eLiteSISUITests;
+			productReference = 69964F5F22DC5EB900B9B103 /* eLiteSISUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69964F3522DC5EB700B9B103 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = apar;
+				TargetAttributes = {
+					69964F3C22DC5EB700B9B103 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					69964F5322DC5EB900B9B103 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 69964F3C22DC5EB700B9B103;
+					};
+					69964F5E22DC5EB900B9B103 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 69964F3C22DC5EB700B9B103;
+					};
+				};
+			};
+			buildConfigurationList = 69964F3822DC5EB700B9B103 /* Build configuration list for PBXProject "eLiteSIS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69964F3422DC5EB700B9B103;
+			productRefGroup = 69964F3E22DC5EB700B9B103 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69964F3C22DC5EB700B9B103 /* eLiteSIS */,
+				69964F5322DC5EB900B9B103 /* eLiteSISTests */,
+				69964F5E22DC5EB900B9B103 /* eLiteSISUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69964F3B22DC5EB700B9B103 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A8EEDCD2404F88E00711941 /* SummaryView.swift in Resources */,
+				692DB842233389F200E56204 /* Student_AttendanceCell.xib in Resources */,
+				692DB84623338A3800E56204 /* StudentHeaderView.xib in Resources */,
+				6997075822F41934004F68F8 /* TeacherListTableViewCell.xib in Resources */,
+				69964F4E22DC5EB900B9B103 /* LaunchScreen.storyboard in Resources */,
+				5AAF9EF62406ABC300694F9E /* PayDetailCell.xib in Resources */,
+				69AE6CB423742AE7007B4EC2 /* homeworkCollectionViewCell.xib in Resources */,
+				69E168FD22F31A3300517CA8 /* HolidayListHeaderView.xib in Resources */,
+				692B9D47231E467D008D8878 /* GetTimeTableViewCell.xib in Resources */,
+				692DB82B2333620800E56204 /* SelectStudentTableViewCell.xib in Resources */,
+				692D5A222334B235007828C7 /* dashboardCollectionViewCell.xib in Resources */,
+				6948DD5B23C45A8B0016941F /* RecentChatCell.xib in Resources */,
+				69964F4B22DC5EB900B9B103 /* Assets.xcassets in Resources */,
+				692DB8362333778000E56204 /* DSHeader.xib in Resources */,
+				698AA310233CCA040009CA5E /* FacultyHeaderView.xib in Resources */,
+				6997075C22F41C62004F68F8 /* TeacherListHeaderView.xib in Resources */,
+				69171332230679F100AFDFF3 /* MoreTableViewCell.xib in Resources */,
+				5A8EEDCC2404EFCF00711941 /* SummaryView.xib in Resources */,
+				692DB817233341A900E56204 /* TeacherDashboardTableViewCell.xib in Resources */,
+				6997074622F40CBF004F68F8 /* TeacherTableViewCell.xib in Resources */,
+				69E168F822F3199D00517CA8 /* HolidayListTableViewCell.xib in Resources */,
+				6997075022F41751004F68F8 /* TeacherHeaderView.xib in Resources */,
+				695B9D2B23ACC94900D17854 /* HomeCollectionViewCell.xib in Resources */,
+				6908215C22F16B3100745DFA /* MoreHeaderView.xib in Resources */,
+				69B3BFC12379733900A8DDA1 /* ViewMoreCollectionCell.xib in Resources */,
+				6910FDDC2321043400354BE2 /* StudyProgessHeaderView.xib in Resources */,
+				692B71CE22F3098B004031BE /* MyCell.xib in Resources */,
+				6908218222F1B34100745DFA /* ProfileTableViewCell.xib in Resources */,
+				692C5A4A230E94D300ECEFC6 /* NotificationTableViewCell.xib in Resources */,
+				6921C792230AB0D5008BB59D /* EventTableViewCell.xib in Resources */,
+				690F59C42338BFBA005E5DBF /* CustomOverlayView.xib in Resources */,
+				692B71D422F31007004031BE /* PerformanceTableViewCell.xib in Resources */,
+				69B2F8F623041EA400ADFB5A /* ChapterTableViewCell.xib in Resources */,
+				5A13349E23FE926700C716B0 /* TransportTableViewCell.xib in Resources */,
+				69FA0FE0236ADEDF009A5B92 /* TeacherAssignmentCell.xib in Resources */,
+				69AE6CAA2373E338007B4EC2 /* HomeWorkTableViewCell.xib in Resources */,
+				69B2F8EA2303D44700ADFB5A /* StudyProgressCell.xib in Resources */,
+				6910DC7D230D60BC0078445A /* chevron-up.pdf in Resources */,
+				5A5C2B6224044297009E98AB /* NotificationSummaryCell.xib in Resources */,
+				692B9D43231E4586008D8878 /* GetTimeHeaderView.xib in Resources */,
+				5A5902AC2403E93800C740EA /* sampleTableViewCell.xib in Resources */,
+				692B71B822F2B74C004031BE /* AssignmentTableViewCell.xib in Resources */,
+				6917133F2306914200AFDFF3 /* TimeTableViewCell.xib in Resources */,
+				690EE47D231F901C000776CF /* dashboardTableViewCell.xib in Resources */,
+				698AA30C233C99120009CA5E /* FacultyProfileCell.xib in Resources */,
+				692B71B022F2AA30004031BE /* AssingnmentHeaderView.xib in Resources */,
+				6908219222F1C61000745DFA /* HealthHeaderView.xib in Resources */,
+				69B2F90123043B4E00ADFB5A /* ChapterHeaderview.xib in Resources */,
+				692B71D022F30B6D004031BE /* PerformanceHeaderView.xib in Resources */,
+				6945E9592397C8F900FCA718 /* GoogleService-Info.plist in Resources */,
+				6908217E22F1AB3D00745DFA /* ProfileHeaderView.xib in Resources */,
+				691713472306A3F200AFDFF3 /* TimeTableHeaderView.xib in Resources */,
+				6908219422F1C7B300745DFA /* HealthReportTableViewCell.xib in Resources */,
+				5AAF9EE524064A7200694F9E /* BasicPayTableViewCell.xib in Resources */,
+				6945E95523978ED800FCA718 /* GalleryTableViewCell.xib in Resources */,
+				692DB8302333772F00E56204 /* DailyScheduleTableViewCell.xib in Resources */,
+				69964F4622DC5EB700B9B103 /* Main.storyboard in Resources */,
+				5A5902A82403C44700C740EA /* StopRouteTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69964F5222DC5EB900B9B103 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69964F5D22DC5EB900B9B103 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		581CF3320F99797E15CCDF62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eLiteSISTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87A3FD7604F7CC5528F1FB2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eLiteSIS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B91B4D8B9775159851E99D27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eLiteSISUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0D79FD5590A4B7EBA7634FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eLiteSIS/Pods-eLiteSIS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eLiteSIS/Pods-eLiteSIS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eLiteSIS/Pods-eLiteSIS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69964F3922DC5EB700B9B103 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694ED7D523953CBE0058945F /* FacultyProfileCell.swift in Sources */,
+				692DB8322333775100E56204 /* DailyScheduleViewController.swift in Sources */,
+				6921C788230A67D0008BB59D /* TableSection.swift in Sources */,
+				6908217322F1A5E800745DFA /* ProfileTableTableViewController.swift in Sources */,
+				691025E3230C0D4E00C1E919 /* SenderTableViewCell.swift in Sources */,
+				6997074822F40E3D004F68F8 /* TeacherTableViewCell.swift in Sources */,
+				694C4005237D178B00A9CCBB /* UploadHomeWorkController.swift in Sources */,
+				5A59029F2403A9A700C740EA /* TransportResponseStopList.swift in Sources */,
+				692D5A262334ED0E007828C7 /* Reusable.swift in Sources */,
+				692DB83D2333888000E56204 /* StudentAttandanceController.swift in Sources */,
+				6908216D22F19C9800745DFA /* DashBoardController.swift in Sources */,
+				692DB84423338A2D00E56204 /* StudentHeaderView.swift in Sources */,
+				5AAF9EE424064A7200694F9E /* BasicPayTableViewCell.swift in Sources */,
+				69E168F722F3199D00517CA8 /* HolidayListTableViewCell.swift in Sources */,
+				69964F7222DC601D00B9B103 /* LoginViewController.swift in Sources */,
+				5AAF9EF02406880500694F9E /* PayDetailController.swift in Sources */,
+				6997073A22F4085D004F68F8 /* EventViewController.swift in Sources */,
+				6997073F22F40C5B004F68F8 /* TeacherTableViewController.swift in Sources */,
+				6921A7FF22F7F299008DF4AA /* WebService.swift in Sources */,
+				6921D90622FC1B5100E9B587 /* RadarMarkerView.swift in Sources */,
+				69B14BA42314EAC800810E5B /* UserDefault.swift in Sources */,
+				6908215A22F167A200745DFA /* Constant.swift in Sources */,
+				692B71C522F2DBB5004031BE /* GalleryViewController.swift in Sources */,
+				6955ACF62398E27D000FD191 /* ApplyLeaveController.swift in Sources */,
+				6908216522F1706300745DFA /* MoreTableViewController.swift in Sources */,
+				69B3BFC02379733900A8DDA1 /* ViewMoreCollectionCell.swift in Sources */,
+				6902D21923421E420022D6AD /* FacultyStudyProgress.swift in Sources */,
+				69DDA7922339D96000B7BB15 /* Timetable+CoreDataProperties.swift in Sources */,
+				690FFBA42302EFE00067CEDE /* StudyProgressController.swift in Sources */,
+				6997073522F3FA24004F68F8 /* HolidayListController.swift in Sources */,
+				690D0407237D32640074EC65 /* FacultyDiscussionViewController.swift in Sources */,
+				6948D1D9237E626500B37B5F /* StudentListViewController.swift in Sources */,
+				692B71BD22F2C4C6004031BE /* NotificationViewController.swift in Sources */,
+				694BFA532383FEA200D4E5BB /* AttachmentHandler.swift in Sources */,
+				5A5C2B6124044297009E98AB /* NotificationSummaryCell.swift in Sources */,
+				69FA0FDF236ADEDF009A5B92 /* TeacherAssignmentCell.swift in Sources */,
+				695B9D2A23ACC94900D17854 /* HomeCollectionViewCell.swift in Sources */,
+				692DB81E23334A5200E56204 /* TeacherDashboardController.swift in Sources */,
+				6908217C22F1A8D900745DFA /* ProfileHeaderView.swift in Sources */,
+				6917133B2306889000AFDFF3 /* TimeTableViewController.swift in Sources */,
+				69171339230680BD00AFDFF3 /* ForgotPasswordController.swift in Sources */,
+				69B2F8EC2303D4DD00ADFB5A /* StudyProgressCell.swift in Sources */,
+				692B71C022F2CA0B004031BE /* ScoreController.swift in Sources */,
+				692DB82023335CA300E56204 /* TeacherTabController.swift in Sources */,
+				691025E5230C0D4E00C1E919 /* ReceiverTableViewCell.swift in Sources */,
+				698F029D22F9ACA0007DC51C /* Date.swift in Sources */,
+				6908216322F16D5500745DFA /* MoreHeaderView.swift in Sources */,
+				5A5895512408E18600C53CCE /* FeeReceiptNavigationController.swift in Sources */,
+				6917134A2306B33D00AFDFF3 /* DiscussionViewController.swift in Sources */,
+				69009EC6233C94AF0014EB65 /* TeacherProfileController.swift in Sources */,
+				692DB83B23337C4C00E56204 /* MenuController.swift in Sources */,
+				6945E95423978ED800FCA718 /* GalleryTableViewCell.swift in Sources */,
+				692DB841233389F200E56204 /* Student_AttendanceCell.swift in Sources */,
+				692B71C322F2CA49004031BE /* PerformanceScoreController.swift in Sources */,
+				694D1AF7238E70BD009FA199 /* SelectStudentController.swift in Sources */,
+				691713452306A26900AFDFF3 /* TimeTableHeaderView.swift in Sources */,
+				69B2F8FD2304364600ADFB5A /* ChapterViewController.swift in Sources */,
+				692B71BA22F2C19F004031BE /* PinBoardViewController.swift in Sources */,
+				692DB8342333777300E56204 /* DSHeader.swift in Sources */,
+				6921A80422F83D96008DF4AA /* CoreDataController.swift in Sources */,
+				5A8EEDCA2404EFBB00711941 /* SummaryView.swift in Sources */,
+				692B71D622F3101B004031BE /* PerformanceTableViewCell.swift in Sources */,
+				693E25AA23ACF5F2000F9E94 /* FeedbackController.swift in Sources */,
+				696273BB23AA4575002F0D23 /* GetAttendanceController.swift in Sources */,
+				69DDA7912339D96000B7BB15 /* Timetable+CoreDataClass.swift in Sources */,
+				69B14BE123155EA600810E5B /* TeacherViewController.swift in Sources */,
+				6921D90822FC1B5100E9B587 /* BalloonMarker.swift in Sources */,
+				69AE6CA62373E27E007B4EC2 /* HomeWorkController.swift in Sources */,
+				6908218A22F1C0AE00745DFA /* HealthHeaderView.swift in Sources */,
+				692DB8272333613B00E56204 /* SelectStudentViewController.swift in Sources */,
+				6948DD5723C444780016941F /* RecentChatHistoryController.swift in Sources */,
+				69AE6CB323742AE7007B4EC2 /* homeworkCollectionViewCell.swift in Sources */,
+				6997075A22F41C2C004F68F8 /* TeacherListHeaderView.swift in Sources */,
+				5A5902AE2403FE9D00C740EA /* EmployeeListController.swift in Sources */,
+				690F59C52338BFBA005E5DBF /* CustomOverlayView.swift in Sources */,
+				6908218022F1B27F00745DFA /* ProfileTableViewCell.swift in Sources */,
+				6910FDDA2321042C00354BE2 /* StudyProgessHeaderView.swift in Sources */,
+				5A13349923FE923200C716B0 /* TransportDetailsController.swift in Sources */,
+				698F029522F95CF8007DC51C /* TabBarViewController.swift in Sources */,
+				69AE6CB023742212007B4EC2 /* NewDashboardController.swift in Sources */,
+				692B71B622F2AE3C004031BE /* AssignmentHeaderView.swift in Sources */,
+				6949D67D23A8CF6700C3BB94 /* UploadCircularSyllabusController.swift in Sources */,
+				692B71C822F2E35A004031BE /* ImageGalleryController.swift in Sources */,
+				698F029922F99B89007DC51C /* CircularProgressBar.swift in Sources */,
+				69171331230679F100AFDFF3 /* MoreTableViewCell.swift in Sources */,
+				692B9D46231E467D008D8878 /* GetTimeTableViewCell.swift in Sources */,
+				6945E9572397C24400FCA718 /* ThumbCell.swift in Sources */,
+				5A13349D23FE926700C716B0 /* TransportTableViewCell.swift in Sources */,
+				698AA30E233CC9F10009CA5E /* FacultyHeaderView.swift in Sources */,
+				6921A80222F812F5008DF4AA /* HealthReportViewController.swift in Sources */,
+				693E6C8E233B30140073C9D5 /* Singleton.swift in Sources */,
+				695314E0239A2C9700C96C9C /* CustomNotificationController.swift in Sources */,
+				6997074E22F41505004F68F8 /* TeacherHeaderView.swift in Sources */,
+				6917133E2306914200AFDFF3 /* TimeTableViewCell.swift in Sources */,
+				69AE6CA92373E338007B4EC2 /* HomeWorkTableViewCell.swift in Sources */,
+				5A5902A72403C44700C740EA /* StopRouteTableViewCell.swift in Sources */,
+				5AAF9EE724064DAA00694F9E /* BasicFeeDetailController.swift in Sources */,
+				690F59BD2338A613005E5DBF /* ExampleCollectionViewCell.swift in Sources */,
+				690BAAC0233E015400346892 /* StudentFacultyController.swift in Sources */,
+				690EE47C231F901C000776CF /* dashboardTableViewCell.swift in Sources */,
+				6997073722F40339004F68F8 /* AttendanceViewController.swift in Sources */,
+				6908219022F1C3E000745DFA /* HealthReportTableViewCell.swift in Sources */,
+				69E168FB22F31A0E00517CA8 /* HolidayListHeaderView.swift in Sources */,
+				692DB8482333A0F400E56204 /* TeacherAssignmentController.swift in Sources */,
+				692B71B422F2AE16004031BE /* AssignmentTableViewCell.swift in Sources */,
+				693315CE22DCB63F00B43666 /* AlertManager.swift in Sources */,
+				69B2F8FF23043B2100ADFB5A /* ChapterHeaderview.swift in Sources */,
+				692DB82A2333620800E56204 /* SelectStudentTableViewCell.swift in Sources */,
+				695B9D2D23ACDE8100D17854 /* TeacherHomeControllerViewController.swift in Sources */,
+				694AF45723B48AB100746580 /* UserProfile+CoreDataClass.swift in Sources */,
+				5AAF9EFA2407BC8500694F9E /* FeeReceiptTableViewController.swift in Sources */,
+				692C5A49230E94D300ECEFC6 /* NotificationTableViewCell.swift in Sources */,
+				693315D022DCB66F00B43666 /* ProgressLoader.swift in Sources */,
+				6949EB8B23B1F81D00271AF3 /* HomeWorkReportcontroller.swift in Sources */,
+				69B2F8F523041EA400ADFB5A /* ChapterTableViewCell.swift in Sources */,
+				6948DD5A23C45A8B0016941F /* RecentChatCell.swift in Sources */,
+				695B9D2523ACC67C00D17854 /* StudentHomeController.swift in Sources */,
+				692B9D41231E457C008D8878 /* GetTimeHeaderView.swift in Sources */,
+				692DB816233341A900E56204 /* TeacherDashboardTableViewCell.swift in Sources */,
+				694AF45823B48AB100746580 /* UserProfile+CoreDataProperties.swift in Sources */,
+				6921C791230AB0D5008BB59D /* EventTableViewCell.swift in Sources */,
+				5A5902AB2403E93800C740EA /* sampleTableViewCell.swift in Sources */,
+				69964F4922DC5EB700B9B103 /* eLiteSIS.xcdatamodeld in Sources */,
+				690132252338CF8900DF0B81 /* CustomPhotoModel.swift in Sources */,
+				69022BD52355821D00E979BB /* InternetReachability.swift in Sources */,
+				692B71CC22F3097E004031BE /* MyCell.swift in Sources */,
+				6902D216234204D80022D6AD /* UITableViewCellAnimationKit.swift in Sources */,
+				5A5902A02403A9A700C740EA /* TransportResponseTransportDetail.swift in Sources */,
+				6908216B22F18F3400745DFA /* CardView.swift in Sources */,
+				5AAF9EF22406A0D800694F9E /* WebViewController.swift in Sources */,
+				69964F4122DC5EB700B9B103 /* AppDelegate.swift in Sources */,
+				5A59029E2403A9A700C740EA /* TransportResponseRootClass.swift in Sources */,
+				692B71AC22F2A9E9004031BE /* AssignmentTableViewController.swift in Sources */,
+				6921D90722FC1B5100E9B587 /* XYMarkerView.swift in Sources */,
+				696273B923AA20E0002F0D23 /* ChangePasswordController.swift in Sources */,
+				692DB82F2333772F00E56204 /* DailyScheduleTableViewCell.swift in Sources */,
+				6949D67F23A8E4B400C3BB94 /* CircularViewController.swift in Sources */,
+				692D5A212334B235007828C7 /* dashboardCollectionViewCell.swift in Sources */,
+				693E6C88233B23590073C9D5 /* TeacherCoreDatacontroller.swift in Sources */,
+				694E6CE4237C0762002E6451 /* FacultyHomeWorkController.swift in Sources */,
+				692B9D3E231E41E2008D8878 /* GetAvailableTimingController.swift in Sources */,
+				691025E4230C0D4E00C1E919 /* MessageTableViewCell.swift in Sources */,
+				692B71D222F30E61004031BE /* PerformanceHeaderView.swift in Sources */,
+				693E25AD23ACF82C000F9E94 /* DIYCalendarCell.swift in Sources */,
+				6997075722F41934004F68F8 /* TeacherListTableViewCell.swift in Sources */,
+				5AAF9EF52406ABC300694F9E /* PayDetailCell.swift in Sources */,
+				5A8EEDC82404E56100711941 /* NotificationSummaryController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69964F5022DC5EB900B9B103 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69964F5922DC5EB900B9B103 /* eLiteSISTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69964F5B22DC5EB900B9B103 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69964F6422DC5EB900B9B103 /* eLiteSISUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69964F5622DC5EB900B9B103 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69964F3C22DC5EB700B9B103 /* eLiteSIS */;
+			targetProxy = 69964F5522DC5EB900B9B103 /* PBXContainerItemProxy */;
+		};
+		69964F6122DC5EB900B9B103 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69964F3C22DC5EB700B9B103 /* eLiteSIS */;
+			targetProxy = 69964F6022DC5EB900B9B103 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69964F4422DC5EB700B9B103 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69964F4522DC5EB700B9B103 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69964F4C22DC5EB900B9B103 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69964F4D22DC5EB900B9B103 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69964F6622DC5EB900B9B103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69964F6722DC5EB900B9B103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69964F6922DC5EB900B9B103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98F66D81175723A546B7ECF8 /* Pods-eLiteSIS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = eLiteSIS/eLiteSIS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = C9V28LHSUN;
+				INFOPLIST_FILE = eLiteSIS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shivalik;
+				PRODUCT_NAME = Shivalik;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		69964F6A22DC5EB900B9B103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF03D731806A4303295ECCF6 /* Pods-eLiteSIS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = eLiteSIS/eLiteSIS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = C9V28LHSUN;
+				INFOPLIST_FILE = eLiteSIS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.6;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shivalik;
+				PRODUCT_NAME = Shivalik;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		69964F6C22DC5EB900B9B103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE1FFCD570310D77E43D1A47 /* Pods-eLiteSISTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9V28LHSUN;
+				INFOPLIST_FILE = eLiteSISTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = apar.eLiteSISTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eLiteSIS.app/eLiteSIS";
+			};
+			name = Debug;
+		};
+		69964F6D22DC5EB900B9B103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B37853E9432FFA1AC11EFF9 /* Pods-eLiteSISTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9V28LHSUN;
+				INFOPLIST_FILE = eLiteSISTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = apar.eLiteSISTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eLiteSIS.app/eLiteSIS";
+			};
+			name = Release;
+		};
+		69964F6F22DC5EB900B9B103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA9059207F649D2AE7CB7AA7 /* Pods-eLiteSISUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9V28LHSUN;
+				INFOPLIST_FILE = eLiteSISUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = apar.eLiteSISUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = eLiteSIS;
+			};
+			name = Debug;
+		};
+		69964F7022DC5EB900B9B103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 645ABE06E339051863B155E6 /* Pods-eLiteSISUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C9V28LHSUN;
+				INFOPLIST_FILE = eLiteSISUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = apar.eLiteSISUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = eLiteSIS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69964F3822DC5EB700B9B103 /* Build configuration list for PBXProject "eLiteSIS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69964F6622DC5EB900B9B103 /* Debug */,
+				69964F6722DC5EB900B9B103 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69964F6822DC5EB900B9B103 /* Build configuration list for PBXNativeTarget "eLiteSIS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69964F6922DC5EB900B9B103 /* Debug */,
+				69964F6A22DC5EB900B9B103 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69964F6B22DC5EB900B9B103 /* Build configuration list for PBXNativeTarget "eLiteSISTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69964F6C22DC5EB900B9B103 /* Debug */,
+				69964F6D22DC5EB900B9B103 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69964F6E22DC5EB900B9B103 /* Build configuration list for PBXNativeTarget "eLiteSISUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69964F6F22DC5EB900B9B103 /* Debug */,
+				69964F7022DC5EB900B9B103 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		69964F4722DC5EB700B9B103 /* eLiteSIS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				69964F4822DC5EB700B9B103 /* eLiteSIS.xcdatamodel */,
+			);
+			currentVersion = 69964F4822DC5EB700B9B103 /* eLiteSIS.xcdatamodel */;
+			path = eLiteSIS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 69964F3522DC5EB700B9B103 /* Project object */;
+}

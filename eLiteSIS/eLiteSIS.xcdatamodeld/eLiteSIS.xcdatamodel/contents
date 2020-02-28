@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AllStudent" representedClassName="AllStudent" syncable="YES" codeGenerationType="class">
+        <attribute name="attendancedate" optional="YES" attributeType="String"/>
+        <attribute name="classname" optional="YES" attributeType="String"/>
+        <attribute name="contactID" optional="YES" attributeType="String"/>
+        <attribute name="contactName" optional="YES" attributeType="String"/>
+        <attribute name="currentclasssession" optional="YES" attributeType="String"/>
+        <attribute name="currentclasssessionid" optional="YES" attributeType="String"/>
+        <attribute name="entityimage" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isPresent" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="registrationID" optional="YES" attributeType="String"/>
+        <attribute name="registrationName" optional="YES" attributeType="String"/>
+        <attribute name="sectionID" optional="YES" attributeType="String"/>
+        <attribute name="sectionname" optional="YES" attributeType="String"/>
+        <attribute name="studentID" optional="YES" attributeType="String"/>
+        <relationship name="section" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ClassSections" inverseName="students" inverseEntity="ClassSections"/>
+    </entity>
+    <entity name="AttendancePercentage" representedClassName="AttendancePercentage" syncable="YES" codeGenerationType="class">
+        <attribute name="absent" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="dateString" optional="YES" attributeType="String"/>
+        <attribute name="leave" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="present" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="ClassSections" representedClassName="ClassSections" syncable="YES" codeGenerationType="class">
+        <attribute name="sectionId" optional="YES" attributeType="String"/>
+        <attribute name="sectionName" optional="YES" attributeType="String"/>
+        <relationship name="students" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AllStudent" inverseName="section" inverseEntity="AllStudent"/>
+    </entity>
+    <entity name="ContactID" representedClassName="ContactID" syncable="YES" codeGenerationType="class">
+        <attribute name="facultyContactID" optional="YES" attributeType="String"/>
+        <attribute name="facultyID" optional="YES" attributeType="String"/>
+        <attribute name="regID" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Facultydashboard" representedClassName="Facultydashboard" syncable="YES" codeGenerationType="class">
+        <attribute name="checked" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="lessonPlanId" optional="YES" attributeType="String"/>
+        <attribute name="sectionId" optional="YES" attributeType="String"/>
+        <attribute name="sectionName" optional="YES" attributeType="String"/>
+        <attribute name="studyprogress" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="subjectId" optional="YES" attributeType="String"/>
+        <attribute name="subjectName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="FacultyHomeWorkList" representedClassName="FacultyHomeWorkList" syncable="YES" codeGenerationType="class">
+        <attribute name="createdOn" optional="YES" attributeType="String"/>
+        <attribute name="endDate" optional="YES" attributeType="String"/>
+        <attribute name="homedescription" optional="YES" attributeType="String"/>
+        <attribute name="notesID" optional="YES" attributeType="String"/>
+        <attribute name="sisName" optional="YES" attributeType="String"/>
+        <attribute name="startDate" optional="YES" attributeType="String"/>
+        <attribute name="studentID" optional="YES" attributeType="String"/>
+        <attribute name="subject" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="FacultyLessonPlan" representedClassName="FacultyLessonPlan" syncable="YES" codeGenerationType="class">
+        <attribute name="classSessionName" optional="YES" attributeType="String"/>
+        <attribute name="faculty" optional="YES" attributeType="String"/>
+        <attribute name="lessonPlanId" optional="YES" attributeType="String"/>
+        <attribute name="sectionId" optional="YES" attributeType="String"/>
+        <attribute name="sectionName" optional="YES" attributeType="String"/>
+        <attribute name="studyprogress" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="subjectId" optional="YES" attributeType="String"/>
+        <attribute name="subjectName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="FacultyProfile" representedClassName="FacultyProfile" syncable="YES" codeGenerationType="class">
+        <attribute name="profileData" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+        <attribute name="regID" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="FacultyStudy" representedClassName="FacultyStudy" syncable="YES" codeGenerationType="class">
+        <attribute name="classSessionName" optional="YES" attributeType="String"/>
+        <attribute name="faculty" optional="YES" attributeType="String"/>
+        <attribute name="lessonPlanId" optional="YES" attributeType="String"/>
+        <attribute name="sectionId" optional="YES" attributeType="String"/>
+        <attribute name="sectionName" optional="YES" attributeType="String"/>
+        <attribute name="studyprogress" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="subjectId" optional="YES" attributeType="String"/>
+        <attribute name="subjectName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="GalleryFolder" representedClassName="GalleryFolder" syncable="YES" codeGenerationType="class">
+        <attribute name="albumID" optional="YES" attributeType="String"/>
+        <attribute name="entityImage" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="GalleryImages" representedClassName="GalleryImages" syncable="YES" codeGenerationType="class">
+        <attribute name="annotationID" optional="YES" attributeType="String"/>
+        <attribute name="documentBody" optional="YES" attributeType="String"/>
+        <attribute name="fileName" optional="YES" attributeType="String"/>
+        <attribute name="folderID" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="HealthReport" representedClassName="HealthReport" syncable="YES" codeGenerationType="class">
+        <attribute name="regID" optional="YES" attributeType="String"/>
+        <attribute name="reportObject" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData"/>
+    </entity>
+    <entity name="HolidayList" representedClassName="HolidayList" syncable="YES" codeGenerationType="class">
+        <attribute name="day" optional="YES" attributeType="String"/>
+        <attribute name="holidayName" optional="YES" attributeType="String"/>
+        <attribute name="startdate" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="HomeWorkList" representedClassName="HomeWorkList" syncable="YES" codeGenerationType="class">
+        <attribute name="createdOn" optional="YES" attributeType="String"/>
+        <attribute name="endDate" optional="YES" attributeType="String"/>
+        <attribute name="homedescription" optional="YES" attributeType="String"/>
+        <attribute name="notesID" optional="YES" attributeType="String"/>
+        <attribute name="sisName" optional="YES" attributeType="String"/>
+        <attribute name="startDate" optional="YES" attributeType="String"/>
+        <attribute name="studentID" optional="YES" attributeType="String"/>
+        <attribute name="subject" optional="YES" attributeType="String"/>
+        <attribute name="userID" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="MonthlyEvents" representedClassName="MonthlyEvents" syncable="YES" codeGenerationType="class">
+        <attribute name="endDate" optional="YES" attributeType="String"/>
+        <attribute name="eventDetail" optional="YES" attributeType="String"/>
+        <attribute name="eventName" optional="YES" attributeType="String"/>
+        <attribute name="eventStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="eventTypeByNewId" optional="YES" attributeType="String"/>
+        <attribute name="eventTypeID" optional="YES" attributeType="String"/>
+        <attribute name="newID" optional="YES" attributeType="String"/>
+        <attribute name="startDate" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Notifications" representedClassName="Notifications" syncable="YES" codeGenerationType="class">
+        <attribute name="base64" optional="YES" attributeType="String"/>
+        <attribute name="createdOn" optional="YES" attributeType="String"/>
+        <attribute name="heading" optional="YES" attributeType="String"/>
+        <attribute name="message" optional="YES" attributeType="String"/>
+        <attribute name="newDate" optional="YES" attributeType="String"/>
+        <attribute name="notificationID" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Percentage" representedClassName="Percentage" syncable="YES" codeGenerationType="class">
+        <attribute name="month" optional="YES" attributeType="String"/>
+        <attribute name="percentage" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="studentID" optional="YES" attributeType="String"/>
+        <attribute name="year" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="PinBoard" representedClassName="PinBoard" syncable="YES" codeGenerationType="class">
+        <attribute name="endDate" optional="YES" attributeType="String"/>
+        <attribute name="heading" optional="YES" attributeType="String"/>
+        <attribute name="message" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="pinBoardID" optional="YES" attributeType="String"/>
+        <attribute name="startdate" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Schedule" representedClassName="Schedule" syncable="YES" codeGenerationType="class">
+        <attribute name="endtime" optional="YES" attributeType="String"/>
+        <attribute name="section" optional="YES" attributeType="String"/>
+        <attribute name="startDatastring" optional="YES" attributeType="String"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="starttime" optional="YES" attributeType="String"/>
+        <attribute name="subject" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="StudentAddress" representedClassName="StudentAddress" syncable="YES" codeGenerationType="class">
+        <attribute name="addressObject" optional="YES" attributeType="Transformable"/>
+        <attribute name="regID" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="StudentAssignment" representedClassName="StudentAssignment" syncable="YES" codeGenerationType="class">
+        <attribute name="assignment" optional="YES" attributeType="String"/>
+        <attribute name="assignmentID" optional="YES" attributeType="String"/>
+        <attribute name="dueDate" optional="YES" attributeType="String"/>
+        <attribute name="entityImage" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="notesID" optional="YES" attributeType="String"/>
+        <attribute name="submitDate" optional="YES" attributeType="String"/>
+        <attribute name="taskDesription" optional="YES" attributeType="String"/>
+        <attribute name="taskStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tat" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="StudentDashboard" representedClassName="StudentDashboard" syncable="YES" codeGenerationType="class">
+        <attribute name="absentsDays" optional="YES" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="completedAssignments" optional="YES" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="newTotalclasses" optional="YES" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="obtainedMarks" optional="YES" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="percentage" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="presentDays" optional="YES" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="studentName" optional="YES" attributeType="String"/>
+        <attribute name="studyProgress" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="totalAssignment" optional="YES" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="totalMarks" optional="YES" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="totalsSubjects" optional="YES" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="StudentPerformance" representedClassName="StudentPerformance" syncable="YES" codeGenerationType="class">
+        <attribute name="examtype" optional="YES" attributeType="String"/>
+        <attribute name="grading" optional="YES" attributeType="String"/>
+        <attribute name="marksID" optional="YES" attributeType="String"/>
+        <attribute name="obtainedmarks" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="resultInPercentage" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="totalmarks" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="StudentStudyProgress" representedClassName="StudentStudyProgress" syncable="YES" codeGenerationType="class">
+        <attribute name="examID" optional="YES" attributeType="String"/>
+        <attribute name="marksID" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="newPerformance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="obtained" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="totalMarks" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="TaskAssignments" representedClassName="TaskAssignments" syncable="YES" codeGenerationType="class">
+        <attribute name="assignationDate" optional="YES" attributeType="String"/>
+        <attribute name="assignmentID" optional="YES" attributeType="String"/>
+        <attribute name="entityimage" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lessonPlanID" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="submitDate" optional="YES" attributeType="String"/>
+        <attribute name="taskStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="TeacherList" representedClassName="TeacherList" syncable="YES" codeGenerationType="class">
+        <attribute name="phoneNo" optional="YES" attributeType="String"/>
+        <attribute name="profileIcon" optional="YES" attributeType="String"/>
+        <attribute name="regirationID" optional="YES" attributeType="String"/>
+        <attribute name="subjectId" optional="YES" attributeType="String"/>
+        <attribute name="subjectName" optional="YES" attributeType="String"/>
+        <attribute name="teacherID" optional="YES" attributeType="String"/>
+        <attribute name="teacherName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Timetable" representedClassName="Timetable" syncable="YES">
+        <attribute name="month" optional="YES" attributeType="String"/>
+        <attribute name="newClasssessionValue" optional="YES" attributeType="String"/>
+        <attribute name="newClasstaken" optional="YES" attributeType="String"/>
+        <attribute name="newClasstakenValue" optional="YES" attributeType="String"/>
+        <attribute name="newEndtime" optional="YES" attributeType="String"/>
+        <attribute name="newStartdate" optional="YES" attributeType="String"/>
+        <attribute name="notify" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="sisName" optional="YES" attributeType="String"/>
+        <attribute name="sisValue" optional="YES" attributeType="String"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="UserProfile" representedClassName="UserProfile" syncable="YES">
+        <attribute name="admissionDate" optional="YES" attributeType="String"/>
+        <attribute name="categoryTxt" optional="YES" attributeType="String"/>
+        <attribute name="classNme" optional="YES" attributeType="String"/>
+        <attribute name="classValue" optional="YES" attributeType="String"/>
+        <attribute name="dob" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="entityImage" optional="YES" attributeType="String"/>
+        <attribute name="fatherName" optional="YES" attributeType="String"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="mobileNumber" optional="YES" attributeType="String"/>
+        <attribute name="motherName" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="programName" optional="YES" attributeType="String"/>
+        <attribute name="regID" optional="YES" attributeType="String"/>
+        <attribute name="registrationNum" optional="YES" attributeType="String"/>
+        <attribute name="sectionName" optional="YES" attributeType="String"/>
+        <attribute name="sectionValue" optional="YES" attributeType="String"/>
+        <attribute name="sessionName" optional="YES" attributeType="String"/>
+        <attribute name="sessionValue" optional="YES" attributeType="String"/>
+        <attribute name="studentID" optional="YES" attributeType="String"/>
+        <attribute name="studentValue" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="AllStudent" positionX="272.33984375" positionY="112.9765625" width="128" height="283"/>
+        <element name="AttendancePercentage" positionX="-72" positionY="-27" width="128" height="103"/>
+        <element name="ClassSections" positionX="-72" positionY="-27" width="128" height="88"/>
+        <element name="ContactID" positionX="-72" positionY="-27" width="128" height="88"/>
+        <element name="Facultydashboard" positionX="-72" positionY="-27" width="128" height="150"/>
+        <element name="FacultyHomeWorkList" positionX="-63" positionY="-18" width="128" height="163"/>
+        <element name="FacultyLessonPlan" positionX="-63" positionY="-18" width="128" height="165"/>
+        <element name="FacultyProfile" positionX="-72" positionY="-27" width="128" height="73"/>
+        <element name="FacultyStudy" positionX="-72" positionY="-27" width="128" height="165"/>
+        <element name="GalleryFolder" positionX="-54" positionY="-9" width="128" height="90"/>
+        <element name="GalleryImages" positionX="-45" positionY="0" width="128" height="105"/>
+        <element name="HealthReport" positionX="-63" positionY="-18" width="128" height="73"/>
+        <element name="HolidayList" positionX="-54" positionY="-9" width="128" height="90"/>
+        <element name="HomeWorkList" positionX="-72" positionY="-27" width="128" height="178"/>
+        <element name="MonthlyEvents" positionX="-63" positionY="-18" width="128" height="165"/>
+        <element name="Notifications" positionX="-72" positionY="-27" width="128" height="148"/>
+        <element name="Percentage" positionX="-72" positionY="-27" width="128" height="103"/>
+        <element name="PinBoard" positionX="-36" positionY="9" width="128" height="135"/>
+        <element name="Schedule" positionX="-45" positionY="0" width="128" height="135"/>
+        <element name="StudentAddress" positionX="-72" positionY="-27" width="128" height="73"/>
+        <element name="StudentAssignment" positionX="-54" positionY="-9" width="128" height="210"/>
+        <element name="StudentDashboard" positionX="-72" positionY="-27" width="128" height="208"/>
+        <element name="StudentPerformance" positionX="-45" positionY="0" width="128" height="135"/>
+        <element name="StudentStudyProgress" positionX="-36" positionY="9" width="128" height="135"/>
+        <element name="TaskAssignments" positionX="-54" positionY="-9" width="128" height="163"/>
+        <element name="TeacherList" positionX="-63" positionY="-18" width="128" height="148"/>
+        <element name="Timetable" positionX="-277.65234375" positionY="-43.20703125" width="128" height="195"/>
+        <element name="UserProfile" positionX="100.40234375" positionY="-178.04296875" width="128" height="358"/>
+    </elements>
+</model>
