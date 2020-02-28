@@ -14,6 +14,10 @@ class WebService: NSObject {
     
     static var shared = WebService()
     
+    //Port : 5359
+    // fee : 5360
+    
+    
     // Prdoduction Student   "http://104.211.88.67:5147/SIS_Student/"
     // Production Faculty    "http://104.211.88.67:5147/SIS/"
     // Production Common URL "http://104.211.88.67:5347/SIS_Common/"
@@ -34,6 +38,7 @@ class WebService: NSObject {
     
     // Mark : Login
     func loginUserWith(username: String, password: String, completion: @escaping (_ success: JSON?, _ error: Error? ) -> Void ) {
+        
         let requestURL = baseURL + "Login/" + username + "/" + password + "/" + schoolid
         print(requestURL)
         let encodedURL = requestURL.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)

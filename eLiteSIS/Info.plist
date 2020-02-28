@@ -24,6 +24,11 @@
 	<true/>
 	<key>LSSupportsOpeningDocumentsInPlace</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoadsInWebContent</key>
+		<true/>
+	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>camera use</string>
 	<key>NSPhotoLibraryUsageDescription</key>
@@ -57,16 +62,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-    <key>NSAppTransportSecurity</key>
-     <dict>
-       <key>Allow Arbitrary Loads</key>
-          <true/>
-    </dict>
-     <key>NSAppTransportSecurity</key>
-     <dict>
-         <key>NSAllowsArbitraryLoadsInWebContent</key>
-         <true/>
-     </dict>
 </dict>
-
 </plist>

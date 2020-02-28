@@ -12,6 +12,7 @@
 		5A13349D23FE926700C716B0 /* TransportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A13349B23FE926700C716B0 /* TransportTableViewCell.swift */; };
 		5A13349E23FE926700C716B0 /* TransportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A13349C23FE926700C716B0 /* TransportTableViewCell.xib */; };
 		5A5895512408E18600C53CCE /* FeeReceiptNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5895502408E18600C53CCE /* FeeReceiptNavigationController.swift */; };
+		5A589553240927A600C53CCE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A589552240927A500C53CCE /* GoogleService-Info.plist */; };
 		5A59029E2403A9A700C740EA /* TransportResponseRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59029B2403A9A700C740EA /* TransportResponseRootClass.swift */; };
 		5A59029F2403A9A700C740EA /* TransportResponseStopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59029C2403A9A700C740EA /* TransportResponseStopList.swift */; };
 		5A5902A02403A9A700C740EA /* TransportResponseTransportDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A59029D2403A9A700C740EA /* TransportResponseTransportDetail.swift */; };
@@ -143,7 +144,6 @@
 		6945E95423978ED800FCA718 /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6945E95223978ED800FCA718 /* GalleryTableViewCell.swift */; };
 		6945E95523978ED800FCA718 /* GalleryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6945E95323978ED800FCA718 /* GalleryTableViewCell.xib */; };
 		6945E9572397C24400FCA718 /* ThumbCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6945E9562397C24400FCA718 /* ThumbCell.swift */; };
-		6945E9592397C8F900FCA718 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6945E9582397C8F900FCA718 /* GoogleService-Info.plist */; };
 		6948D1D9237E626500B37B5F /* StudentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948D1D8237E626500B37B5F /* StudentListViewController.swift */; };
 		6948DD5723C444780016941F /* RecentChatHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948DD5623C444780016941F /* RecentChatHistoryController.swift */; };
 		6948DD5A23C45A8B0016941F /* RecentChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948DD5823C45A8B0016941F /* RecentChatCell.swift */; };
@@ -244,6 +244,7 @@
 		5A13349B23FE926700C716B0 /* TransportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportTableViewCell.swift; sourceTree = "<group>"; };
 		5A13349C23FE926700C716B0 /* TransportTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransportTableViewCell.xib; sourceTree = "<group>"; };
 		5A5895502408E18600C53CCE /* FeeReceiptNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeeReceiptNavigationController.swift; path = eLiteSIS/FeeReceiptNavigationController.swift; sourceTree = SOURCE_ROOT; };
+		5A589552240927A500C53CCE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5A59029B2403A9A700C740EA /* TransportResponseRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportResponseRootClass.swift; sourceTree = "<group>"; };
 		5A59029C2403A9A700C740EA /* TransportResponseStopList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportResponseStopList.swift; sourceTree = "<group>"; };
 		5A59029D2403A9A700C740EA /* TransportResponseTransportDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportResponseTransportDetail.swift; sourceTree = "<group>"; };
@@ -376,7 +377,6 @@
 		6945E95223978ED800FCA718 /* GalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewCell.swift; sourceTree = "<group>"; };
 		6945E95323978ED800FCA718 /* GalleryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryTableViewCell.xib; sourceTree = "<group>"; };
 		6945E9562397C24400FCA718 /* ThumbCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbCell.swift; sourceTree = "<group>"; };
-		6945E9582397C8F900FCA718 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6948D1D8237E626500B37B5F /* StudentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewController.swift; sourceTree = "<group>"; };
 		6948DD5623C444780016941F /* RecentChatHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecentChatHistoryController.swift; path = eLiteSIS/RecentChatHistoryController.swift; sourceTree = SOURCE_ROOT; };
 		6948DD5823C45A8B0016941F /* RecentChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentChatCell.swift; sourceTree = "<group>"; };
@@ -405,7 +405,7 @@
 		698F029422F95CF8007DC51C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		698F029822F99B88007DC51C /* CircularProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
 		698F029C22F9ACA0007DC51C /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
-		69964F3D22DC5EB700B9B103 /* Shivalik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shivalik.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69964F3D22DC5EB700B9B103 /* K12Accelerate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = K12Accelerate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69964F4022DC5EB700B9B103 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69964F4522DC5EB700B9B103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69964F4822DC5EB700B9B103 /* eLiteSIS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eLiteSIS.xcdatamodel; sourceTree = "<group>"; };
@@ -977,7 +977,7 @@
 		69964F3E22DC5EB700B9B103 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				69964F3D22DC5EB700B9B103 /* Shivalik.app */,
+				69964F3D22DC5EB700B9B103 /* K12Accelerate.app */,
 				69964F5422DC5EB900B9B103 /* eLiteSISTests.xctest */,
 				69964F5F22DC5EB900B9B103 /* eLiteSISUITests.xctest */,
 			);
@@ -987,8 +987,8 @@
 		69964F3F22DC5EB700B9B103 /* eLiteSIS */ = {
 			isa = PBXGroup;
 			children = (
+				5A589552240927A500C53CCE /* GoogleService-Info.plist */,
 				69964F4022DC5EB700B9B103 /* AppDelegate.swift */,
-				6945E9582397C8F900FCA718 /* GoogleService-Info.plist */,
 				5AAF9EDB2406469200694F9E /* FeePayment */,
 				695314DE239A2BCB00C96C9C /* CustomNotifications */,
 				692B71BE22F2C4CD004031BE /* Notifications */,
@@ -1177,7 +1177,7 @@
 			);
 			name = eLiteSIS;
 			productName = eLiteSIS;
-			productReference = 69964F3D22DC5EB700B9B103 /* Shivalik.app */;
+			productReference = 69964F3D22DC5EB700B9B103 /* K12Accelerate.app */;
 			productType = "com.apple.product-type.application";
 		};
 		69964F5322DC5EB900B9B103 /* eLiteSISTests */ = {
@@ -1310,6 +1310,7 @@
 				690F59C42338BFBA005E5DBF /* CustomOverlayView.xib in Resources */,
 				692B71D422F31007004031BE /* PerformanceTableViewCell.xib in Resources */,
 				69B2F8F623041EA400ADFB5A /* ChapterTableViewCell.xib in Resources */,
+				5A589553240927A600C53CCE /* GoogleService-Info.plist in Resources */,
 				5A13349E23FE926700C716B0 /* TransportTableViewCell.xib in Resources */,
 				69FA0FE0236ADEDF009A5B92 /* TeacherAssignmentCell.xib in Resources */,
 				69AE6CAA2373E338007B4EC2 /* HomeWorkTableViewCell.xib in Resources */,
@@ -1326,7 +1327,6 @@
 				6908219222F1C61000745DFA /* HealthHeaderView.xib in Resources */,
 				69B2F90123043B4E00ADFB5A /* ChapterHeaderview.xib in Resources */,
 				692B71D022F30B6D004031BE /* PerformanceHeaderView.xib in Resources */,
-				6945E9592397C8F900FCA718 /* GoogleService-Info.plist in Resources */,
 				6908217E22F1AB3D00745DFA /* ProfileHeaderView.xib in Resources */,
 				691713472306A3F200AFDFF3 /* TimeTableHeaderView.xib in Resources */,
 				6908219422F1C7B300745DFA /* HealthReportTableViewCell.xib in Resources */,
@@ -1779,8 +1779,8 @@
 				);
 				MARKETING_VERSION = 1.6;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shivalik;
-				PRODUCT_NAME = Shivalik;
+				PRODUCT_BUNDLE_IDENTIFIER = com.K12Accelerate;
+				PRODUCT_NAME = K12Accelerate;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1803,8 +1803,8 @@
 				);
 				MARKETING_VERSION = 1.6;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shivalik;
-				PRODUCT_NAME = Shivalik;
+				PRODUCT_BUNDLE_IDENTIFIER = com.K12Accelerate;
+				PRODUCT_NAME = K12Accelerate;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

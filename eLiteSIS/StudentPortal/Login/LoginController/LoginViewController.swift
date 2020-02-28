@@ -21,6 +21,8 @@ class LoginViewController: UIViewController {
     var md5Hex : String = ""
     var iconClick = true
     var passswodtext: String = ""
+    var textField: UITextField?
+    var schoolId: String?
     
     @IBOutlet weak var showPassword: UIButton!
     override func viewDidLoad() {
@@ -30,7 +32,6 @@ class LoginViewController: UIViewController {
         passwordTextField.setLeftView(image: UIImage.init(named: "password")!)
         passwordTextField.setRightView(image: UIImage.init(named: "hide")!)
         
-        
         loginButton.layer.cornerRadius = loginButton.bounds.height / 2
         loginButton.layer.masksToBounds = true
         self.passwordTextField.isSecureTextEntry = true
@@ -38,8 +39,17 @@ class LoginViewController: UIViewController {
         
     }
     
-    @IBAction func showPassword(_ sender: Any) {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
+        if (UserDefaults.standard.string(forKey: "SchoolID") == nil) {
+            askForSchoolID()
+        }
+        
+    }
+    
+    @IBAction func showPassword(_ sender: Any) {
+       
         if(iconClick == true) {
                passwordTextField.setRightView(image: UIImage.init(named: "show")!)
             passwordTextField.isSecureTextEntry = false
@@ -186,6 +196,42 @@ class LoginViewController: UIViewController {
             }
         }
     }
+    
+    func askForSchoolID() {
+          let alert = UIAlertController(title: "Welcome to eLiteSIS !",
+                                        message: "Users installing the app for first time shall enter the School ID received on their registered Email / Mobile to continue...",
+                                        preferredStyle: .alert)
+          // Submit button
+          let okAction = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+              // Get 1st TextField's text
+              self.schoolId = alert.textFields![0].text
+              if self.schoolId == "" {
+                  AlertManager.shared.showAlertWith(title: "Alert", message: "School ID cannot be left blank")
+              }else{
+                  UserDefaults.standard.set(self.schoolId!, forKey: "SchoolID")
+                 // self.buttonClicked() // reetesh
+              }
+          })
+          
+          // Cancel button
+            let cancel = UIAlertAction(title: "Cancel", style: .destructive, handler: { (action) -> Void in })
+         
+          // Add 1 textField and customize it
+          alert.addTextField { (textField: UITextField) in
+              textField.text = ""
+              textField.keyboardAppearance = .dark
+              textField.keyboardType = .default
+              textField.autocorrectionType = .no
+              textField.placeholder = "Type school ID here"
+              textField.clearButtonMode = .whileEditing
+          }
+          
+          // Add action buttons and present the Alert
+          alert.addAction(cancel)
+          alert.addAction(okAction)
+          present(alert, animated: true, completion: nil)
+      }
+    
 }
 // Put this piece of code anywhere you like
 extension UIViewController {
