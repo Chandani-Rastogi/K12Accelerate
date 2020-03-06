@@ -198,7 +198,8 @@ class LoginViewController: UIViewController {
     }
     
     func askForSchoolID() {
-          let alert = UIAlertController(title: "Welcome to eLiteSIS !",
+         
+          let alert = UIAlertController(title: "Welcome to K12Accelerate !",
                                         message: "Users installing the app for first time shall enter the School ID received on their registered Email / Mobile to continue...",
                                         preferredStyle: .alert)
           // Submit button
@@ -208,6 +209,7 @@ class LoginViewController: UIViewController {
               if self.schoolId == "" {
                   AlertManager.shared.showAlertWith(title: "Alert", message: "School ID cannot be left blank")
               }else{
+                self.validateSchoolID(schoolId:self.schoolId!)
                   UserDefaults.standard.set(self.schoolId!, forKey: "SchoolID")
                  // self.buttonClicked() // reetesh
               }
@@ -231,6 +233,19 @@ class LoginViewController: UIViewController {
           alert.addAction(okAction)
           present(alert, animated: true, completion: nil)
       }
+  
+    func validateSchoolID(schoolId:String){
+        WebService.shared.validateSchoolID(schoolID:schoolId,completion:{(response, error) in
+            if error == nil , let responseDict = response {
+                ProgressLoader.shared.showLoader(withText:"Verifying SchoolID!!")
+                print(responseDict)
+                
+            }else{
+                AlertManager.shared.showAlertWith(title: "Error!", message: "while getting response")
+            }
+            ProgressLoader.shared.hideLoader()
+        })
+    }
     
 }
 // Put this piece of code anywhere you like

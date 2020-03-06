@@ -1235,7 +1235,6 @@ class WebService: NSObject {
         
         let requestURL = "http://104.211.88.67:5359/SIS_Student/" + "GetFeeReceipt/" + "E074B40D-E3CE-E911-A813-000D3AF0563B" + "/" + "C720308_07"
         print(requestURL)
-        
         let encodedURL = requestURL.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)
         Alamofire.request(encodedURL!, headers:nil ).responseJSON { (responseData) -> Void in
             if let result = responseData.result.value {
@@ -1244,6 +1243,20 @@ class WebService: NSObject {
                 completion(responseDict, nil)
             }else{
                 completion(nil, responseData.error)
+            }
+        }
+    }
+    
+    
+    func validateSchoolID(schoolID:String,completion:@escaping (_ succes: JSON?, _ error: Error?) -> Void) {
+        let requestedURL = ""
+        let encodedURL = requestedURL.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)
+        Alamofire.request(encodedURL!,headers: nil).responseJSON { (responseData) -> Void in
+            if let result = responseData.result.value{
+                let responseDict = JSON(result)
+                completion(responseDict,nil)
+            }else{
+                completion(nil,responseData.error)
             }
         }
     }
