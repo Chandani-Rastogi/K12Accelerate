@@ -17,7 +17,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="login" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login" id="BYZ-38-t0r" customClass="LoginViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kpJ-Rh-dJT" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kpJ-Rh-dJT" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                 <rect key="frame" x="32" y="260" width="309" height="267"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -108,7 +108,7 @@
         <!--Forgot Password Controller-->
         <scene sceneID="SUI-ke-TJh">
             <objects>
-                <viewController storyboardIdentifier="forgotpassword" id="Jc7-m3-Nco" customClass="ForgotPasswordController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="forgotpassword" id="Jc7-m3-Nco" customClass="ForgotPasswordController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eDT-O0-nze">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,7 +117,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k65-x4-SXS" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k65-x4-SXS" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                 <rect key="frame" x="25" y="241" width="309" height="288"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -205,7 +205,7 @@
         <!--Change Password Controller-->
         <scene sceneID="g0A-J9-y21">
             <objects>
-                <viewController storyboardIdentifier="changepassword" id="1Rc-iI-c61" customClass="ChangePasswordController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="changepassword" id="1Rc-iI-c61" customClass="ChangePasswordController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g7T-94-TXK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,7 +214,7 @@
                                 <rect key="frame" x="-1" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cS8-Du-wHe" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cS8-Du-wHe" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                 <rect key="frame" x="32" y="241" width="309" height="288"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -296,7 +296,7 @@
         <!--Time Table-->
         <scene sceneID="twB-uk-jtU">
             <objects>
-                <viewController storyboardIdentifier="timetable" id="iSm-Lt-vaM" customClass="TimeTableViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="timetable" id="iSm-Lt-vaM" customClass="TimeTableViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y1X-rs-p8i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -369,7 +369,7 @@
         <!--More-->
         <scene sceneID="FWD-zD-WXl">
             <objects>
-                <tableViewController storyboardIdentifier="more" id="bnQ-co-ESu" customClass="MoreTableViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="more" id="bnQ-co-ESu" customClass="MoreTableViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xnE-fB-Qoo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -408,7 +408,7 @@
         <!--Select Faculty-->
         <scene sceneID="7AH-MX-okG">
             <objects>
-                <viewController storyboardIdentifier="studentChat" id="MUb-Pe-nT0" customClass="SelectStudentController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="studentChat" id="MUb-Pe-nT0" customClass="SelectStudentController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dwW-9H-RNb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -460,7 +460,7 @@
         <!--Discussion-->
         <scene sceneID="gs9-kr-oi8">
             <objects>
-                <viewController storyboardIdentifier="discuss" id="xSz-B2-ocs" customClass="DiscussionViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="discuss" id="xSz-B2-ocs" customClass="DiscussionViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oWF-k7-EfO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -475,7 +475,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="senderCell" rowHeight="60" id="qGH-zL-ecF" customClass="SenderTableViewCell" customModule="Shivalik" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="senderCell" rowHeight="60" id="qGH-zL-ecF" customClass="SenderTableViewCell" customModule="K12Accelerate" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qGH-zL-ecF" id="bw5-QD-zWk">
@@ -523,7 +523,7 @@
                                             <outlet property="senderMessageTextView" destination="VDo-ir-4xI" id="Kcv-gn-wkJ"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="receiverCell" rowHeight="60" id="Hyt-L3-hKP" customClass="ReceiverTableViewCell" customModule="Shivalik" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="receiverCell" rowHeight="60" id="Hyt-L3-hKP" customClass="ReceiverTableViewCell" customModule="K12Accelerate" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="88" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hyt-L3-hKP" id="Nvc-EZ-LLs">
@@ -625,7 +625,7 @@
         <!--Circular-->
         <scene sceneID="SEI-NL-H61">
             <objects>
-                <viewController storyboardIdentifier="circular" id="L5a-Ea-Rfk" customClass="CircularViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="circular" id="L5a-Ea-Rfk" customClass="CircularViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZUp-2Y-mB4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -678,7 +678,7 @@
         <!--PinBoard-->
         <scene sceneID="nBr-22-Xtg">
             <objects>
-                <viewController storyboardIdentifier="pinBoard" id="MDp-fB-tQ3" customClass="PinBoardViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="pinBoard" id="MDp-fB-tQ3" customClass="PinBoardViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Fa-Tv-P8V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -707,7 +707,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="133"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2iu-e3-Vvz" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2iu-e3-Vvz" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                                     <rect key="frame" x="15" y="9" width="345" height="112"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" tag="45" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6or-JN-IOb">
@@ -823,7 +823,7 @@
         <!--Notification-->
         <scene sceneID="Dfn-18-QIb">
             <objects>
-                <viewController storyboardIdentifier="Notification" id="svn-hG-US1" customClass="NotificationViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Notification" id="svn-hG-US1" customClass="NotificationViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4kT-7m-snU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -857,7 +857,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="133"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="duC-LR-Dxa" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="duC-LR-Dxa" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                                     <rect key="frame" x="15" y="9" width="345" height="112"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRC-Pq-LM6">
@@ -969,7 +969,7 @@
         <!--Gallery Folder-->
         <scene sceneID="irF-TU-HAw">
             <objects>
-                <viewController storyboardIdentifier="gallery" id="y2A-lK-lcq" customClass="GalleryViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gallery" id="y2A-lK-lcq" customClass="GalleryViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q2o-Su-bV2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1019,7 +1019,7 @@
         <!--Image Gallery-->
         <scene sceneID="kpj-PX-BGS">
             <objects>
-                <viewController storyboardIdentifier="image" id="Ntr-9x-5kD" customClass="ImageGalleryController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="image" id="Ntr-9x-5kD" customClass="ImageGalleryController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DP8-D3-oNX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1035,7 +1035,7 @@
                                     <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ExampleCollectionViewCell" id="UMe-iG-Ehd" customClass="ExampleCollectionViewCell" customModule="Shivalik" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ExampleCollectionViewCell" id="UMe-iG-Ehd" customClass="ExampleCollectionViewCell" customModule="K12Accelerate" customModuleProvider="target">
                                         <rect key="frame" x="10" y="10" width="150" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -1095,7 +1095,7 @@
         <!--Leave Application-->
         <scene sceneID="h05-LX-UDP">
             <objects>
-                <viewController storyboardIdentifier="leave" id="nmP-aY-Pwb" customClass="ApplyLeaveController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="leave" id="nmP-aY-Pwb" customClass="ApplyLeaveController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qKC-nu-EI5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1174,7 +1174,7 @@
         <!--View Image-->
         <scene sceneID="bzO-nh-hvv">
             <objects>
-                <viewController storyboardIdentifier="viewImage" id="Cga-ow-dfK" customClass="ViewImageController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="viewImage" id="Cga-ow-dfK" customClass="ViewImageController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vOw-ae-32t">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1227,7 +1227,7 @@
         <!--Teacher Tab Controller-->
         <scene sceneID="XJr-vN-dPk">
             <objects>
-                <tabBarController storyboardIdentifier="teacherTabeBar" id="WnZ-0K-sis" customClass="TeacherTabController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="teacherTabeBar" id="WnZ-0K-sis" customClass="TeacherTabController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vZL-NR-YaQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1270,7 +1270,7 @@
         <!--Home-->
         <scene sceneID="SLC-m4-ooS">
             <objects>
-                <viewController storyboardIdentifier="teacherHome" id="io8-dt-JZv" customClass="TeacherHomeControllerViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="teacherHome" id="io8-dt-JZv" customClass="TeacherHomeControllerViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Z4-Gz-6QY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1346,7 +1346,7 @@
         <!--Performance/Score-->
         <scene sceneID="o49-Wu-CEe">
             <objects>
-                <viewController storyboardIdentifier="performance" id="anR-At-Nfb" customClass="PerformanceScoreController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="performance" id="anR-At-Nfb" customClass="PerformanceScoreController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zkd-un-DOs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1409,7 +1409,7 @@
                                 <rect key="frame" x="0.0" y="35" width="375" height="688"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rYd-jf-HnG" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rYd-jf-HnG" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                         <rect key="frame" x="15" y="43" width="343" height="148"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -1498,7 +1498,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LzK-Vt-7nM" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LzK-Vt-7nM" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                         <rect key="frame" x="15" y="484" width="343" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -1516,7 +1516,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PYn-Xy-oYN" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PYn-Xy-oYN" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                         <rect key="frame" x="15" y="238" width="343" height="239"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -1596,7 +1596,7 @@
         <!--Chat-->
         <scene sceneID="WJt-dw-B8b">
             <objects>
-                <viewController storyboardIdentifier="studentList" id="UVD-Dh-DYH" customClass="StudentListViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="studentList" id="UVD-Dh-DYH" customClass="StudentListViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oMi-cR-6Hr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1672,7 +1672,7 @@
         <!--Discussion-->
         <scene sceneID="S3e-U7-ufg">
             <objects>
-                <viewController storyboardIdentifier="facultyChat" id="Lr2-9p-wgU" customClass="FacultyDiscussionViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="facultyChat" id="Lr2-9p-wgU" customClass="FacultyDiscussionViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w9n-ZA-L75">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1687,7 +1687,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="senderCell" rowHeight="60" id="ziX-W2-tqK" customClass="SenderTableViewCell" customModule="Shivalik" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="senderCell" rowHeight="60" id="ziX-W2-tqK" customClass="SenderTableViewCell" customModule="K12Accelerate" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ziX-W2-tqK" id="iYe-vN-e9a">
@@ -1735,7 +1735,7 @@
                                             <outlet property="senderMessageTextView" destination="svE-MN-IXM" id="70N-97-DT9"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="receiverCell" rowHeight="60" id="GEA-nd-FlA" customClass="ReceiverTableViewCell" customModule="Shivalik" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="receiverCell" rowHeight="60" id="GEA-nd-FlA" customClass="ReceiverTableViewCell" customModule="K12Accelerate" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="88" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GEA-nd-FlA" id="xLl-2E-5tv">
@@ -1847,7 +1847,7 @@
         <!--DashBoard-->
         <scene sceneID="nqY-ON-YGt">
             <objects>
-                <viewController id="T7Q-uK-8v6" customClass="NewDashboardController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="T7Q-uK-8v6" customClass="NewDashboardController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bqf-pn-ode">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1961,7 +1961,7 @@
         <!--Study Progress-->
         <scene sceneID="Dkl-wa-Lm7">
             <objects>
-                <viewController storyboardIdentifier="progress" id="kOU-as-goI" customClass="StudyProgressController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="progress" id="kOU-as-goI" customClass="StudyProgressController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hya-7f-xdJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2042,7 +2042,7 @@
         <!--DashBoard-->
         <scene sceneID="H4Z-eK-GHe">
             <objects>
-                <viewController storyboardIdentifier="dashboard" id="Ce9-pI-Xwx" customClass="DashBoardController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dashboard" id="Ce9-pI-Xwx" customClass="DashBoardController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m6Z-uZ-BJj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2072,7 +2072,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0078431372550000003" green="0.1137254902" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sbs-PX-UJt" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sbs-PX-UJt" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                 <rect key="frame" x="13" y="72" width="347" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -2212,7 +2212,7 @@
         <!--Transport Details-->
         <scene sceneID="709-eo-leg">
             <objects>
-                <viewController storyboardIdentifier="transport" id="hdX-Aa-bpw" customClass="TransportDetailsController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="transport" id="hdX-Aa-bpw" customClass="TransportDetailsController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n3l-AH-d9h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2226,7 +2226,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableView>
-                                    <view contentMode="scaleToFill" ambiguous="YES" id="VKt-7L-I3y" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" ambiguous="YES" id="VKt-7L-I3y" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                         <rect key="frame" x="12" y="740" width="355" height="624"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -2293,7 +2293,7 @@
         <!--Chat-->
         <scene sceneID="Ei0-XV-e6o">
             <objects>
-                <viewController storyboardIdentifier="emplyeeList" id="YhD-mo-TGE" customClass="EmployeeListController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="emplyeeList" id="YhD-mo-TGE" customClass="EmployeeListController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iVM-zk-mJc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2368,12 +2368,12 @@
         <!--Notification Summary-->
         <scene sceneID="5An-RA-zai">
             <objects>
-                <viewController storyboardIdentifier="notificationSummary" id="1i2-kv-JgI" customClass="NotificationSummaryController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="notificationSummary" id="1i2-kv-JgI" customClass="NotificationSummaryController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AUF-XC-2EX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cdH-gB-gFH" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cdH-gB-gFH" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                 <rect key="frame" x="16" y="22" width="343" height="261"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -2505,12 +2505,12 @@
         <!--Feedback-->
         <scene sceneID="h0y-IO-65j">
             <objects>
-                <viewController storyboardIdentifier="feedback" id="PaW-FU-FFQ" customClass="FeedbackController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="feedback" id="PaW-FU-FFQ" customClass="FeedbackController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="USo-4F-WuV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l5J-4h-JlC" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l5J-4h-JlC" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                 <rect key="frame" x="15" y="28" width="343" height="261"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -2633,12 +2633,12 @@
         <!--HomeWork Report-->
         <scene sceneID="B5W-jN-nND">
             <objects>
-                <viewController storyboardIdentifier="homeworkReport" id="KF5-xO-K6Q" customClass="HomeWorkReportcontroller" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeworkReport" id="KF5-xO-K6Q" customClass="HomeWorkReportcontroller" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vi3-C4-cIo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cLZ-R6-4OQ" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cLZ-R6-4OQ" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                 <rect key="frame" x="7" y="10" width="359" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -2699,7 +2699,7 @@
         <!--Study Progress-->
         <scene sceneID="tLr-M6-EEu">
             <objects>
-                <viewController storyboardIdentifier="chapter" id="voQ-up-3a7" customClass="ChapterViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chapter" id="voQ-up-3a7" customClass="ChapterViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fes-vf-EK9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2749,12 +2749,12 @@
         <!--View Attendance-->
         <scene sceneID="lvt-1P-f1G">
             <objects>
-                <viewController storyboardIdentifier="getAttendance" id="bKQ-hC-zLn" customClass="GetAttendanceController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="getAttendance" id="bKQ-hC-zLn" customClass="GetAttendanceController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="61Z-vt-EBY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rh8-ct-5Ns" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rh8-ct-5Ns" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                 <rect key="frame" x="15" y="18" width="343" height="163"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -2831,7 +2831,7 @@
         <!--My Profile-->
         <scene sceneID="TcF-ca-YsV">
             <objects>
-                <tableViewController storyboardIdentifier="profile" id="fqi-KI-Q9d" customClass="ProfileTableTableViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="profile" id="fqi-KI-Q9d" customClass="ProfileTableTableViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dWs-TA-Zrr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2867,7 +2867,7 @@
         <!--Assignment-->
         <scene sceneID="620-Oc-lp5">
             <objects>
-                <tableViewController storyboardIdentifier="assignment" id="DUf-B4-Nl6" customClass="AssignmentTableViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="assignment" id="DUf-B4-Nl6" customClass="AssignmentTableViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ncW-cN-oTw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2926,7 +2926,7 @@
         <!--Holiday List-->
         <scene sceneID="Ibu-fi-QSB">
             <objects>
-                <viewController storyboardIdentifier="holiday" id="RX3-q7-DO3" customClass="HolidayListController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="holiday" id="RX3-q7-DO3" customClass="HolidayListController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S6O-6h-GWA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2956,7 +2956,7 @@
         <!--Teacher's Profile-->
         <scene sceneID="GEp-3z-gxT">
             <objects>
-                <tableViewController storyboardIdentifier="teacher" id="tIe-ux-2Vp" customClass="TeacherTableViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="teacher" id="tIe-ux-2Vp" customClass="TeacherTableViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6PM-Sq-a3b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2985,7 +2985,7 @@
         <!--Teacher List-->
         <scene sceneID="jse-XO-jEi">
             <objects>
-                <viewController storyboardIdentifier="teacherList" id="TNC-7L-wkE" customClass="TeacherViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="teacherList" id="TNC-7L-wkE" customClass="TeacherViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nmn-cd-v1e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3020,7 +3020,7 @@
         <!--Get Available Timing Controller-->
         <scene sceneID="yGZ-eo-ciB">
             <objects>
-                <viewController storyboardIdentifier="getAvailable" id="oXE-IL-Mmh" customClass="GetAvailableTimingController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="getAvailable" id="oXE-IL-Mmh" customClass="GetAvailableTimingController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CGG-mT-dLe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3070,7 +3070,7 @@
         <!--Home-->
         <scene sceneID="BUu-o2-eSc">
             <objects>
-                <viewController storyboardIdentifier="studentHome" id="S6R-BI-Ok6" customClass="StudentHomeController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="studentHome" id="S6R-BI-Ok6" customClass="StudentHomeController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eZ0-nU-aCH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3117,7 +3117,7 @@
         <!--Fee Receipt-->
         <scene sceneID="iXx-HE-dfn">
             <objects>
-                <tableViewController storyboardIdentifier="receipt" id="8p9-nB-eLo" customClass="FeeReceiptTableViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="receipt" id="8p9-nB-eLo" customClass="FeeReceiptTableViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QSM-Ij-Fzy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3153,7 +3153,7 @@
         <!--Fee Receipt Navigation Controller-->
         <scene sceneID="Ocy-9u-l4T">
             <objects>
-                <navigationController storyboardIdentifier="feeNav" id="coN-dx-xV5" customClass="FeeReceiptNavigationController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="feeNav" id="coN-dx-xV5" customClass="FeeReceiptNavigationController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ZAA-EQ-wRm">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -3213,7 +3213,7 @@
         <!--Recent Chat-->
         <scene sceneID="VWo-T5-sSL">
             <objects>
-                <viewController storyboardIdentifier="recentChat" id="Zpt-T7-xmQ" customClass="RecentChatHistoryController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="recentChat" id="Zpt-T7-xmQ" customClass="RecentChatHistoryController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ca3-2q-qK8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3266,7 +3266,7 @@
         <!--Fee Payment-->
         <scene sceneID="qwt-Kg-aVQ">
             <objects>
-                <viewController storyboardIdentifier="BasicPayment" id="FGY-pQ-Z2I" customClass="BasicFeeDetailController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BasicPayment" id="FGY-pQ-Z2I" customClass="BasicFeeDetailController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="em8-pE-ooZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3350,12 +3350,12 @@
         <!--Pay Detail Controller-->
         <scene sceneID="XmB-QA-eyY">
             <objects>
-                <viewController storyboardIdentifier="pay" id="JsP-XQ-3qB" customClass="PayDetailController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="pay" id="JsP-XQ-3qB" customClass="PayDetailController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0YX-z3-2wv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2U6-u4-N9g" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2U6-u4-N9g" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                 <rect key="frame" x="12" y="35" width="351" height="743"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -3459,7 +3459,7 @@
         <!--Web View Controller-->
         <scene sceneID="0GI-VQ-IRO">
             <objects>
-                <viewController storyboardIdentifier="web" id="HNV-h1-WhS" customClass="WebViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="web" id="HNV-h1-WhS" customClass="WebViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y9N-5k-JDx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3530,7 +3530,7 @@
         <!--Attendance-->
         <scene sceneID="5X0-8h-azH">
             <objects>
-                <viewController storyboardIdentifier="attendance" id="hVa-Ff-7Es" customClass="AttendanceViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="attendance" id="hVa-Ff-7Es" customClass="AttendanceViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8PN-nY-nxv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3548,7 +3548,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Phd-B0-wSJ" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Phd-B0-wSJ" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                 <rect key="frame" x="18" y="304" width="338" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -3605,7 +3605,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nOQ-Dg-Rxf" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nOQ-Dg-Rxf" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                 <rect key="frame" x="18" y="381" width="338" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -3672,7 +3672,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vve-w5-GsK" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vve-w5-GsK" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                 <rect key="frame" x="18" y="461" width="338" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -3784,7 +3784,7 @@
         <!--HomeWork-->
         <scene sceneID="2I1-Ae-h0G">
             <objects>
-                <viewController storyboardIdentifier="homework" id="0wm-zm-Ptc" customClass="HomeWorkController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homework" id="0wm-zm-Ptc" customClass="HomeWorkController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8fN-Rs-wxo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3835,7 +3835,7 @@
         <!--Monthly Event-->
         <scene sceneID="88K-gP-sc3">
             <objects>
-                <viewController storyboardIdentifier="event" id="FRo-1l-BsT" customClass="EventViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="event" id="FRo-1l-BsT" customClass="EventViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oTA-Qq-bLf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3920,7 +3920,7 @@
         <!--Health Report-->
         <scene sceneID="Cqo-k3-Ge1">
             <objects>
-                <viewController storyboardIdentifier="health" id="1BF-m1-FfR" customClass="HealthReportViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="health" id="1BF-m1-FfR" customClass="HealthReportViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bg6-QP-3nJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3983,7 +3983,7 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="jCc-Zh-iPx">
             <objects>
-                <tabBarController storyboardIdentifier="tabBar" id="FxE-CY-IUA" customClass="TabBarViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="FxE-CY-IUA" customClass="TabBarViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="fX2-PQ-j4e"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QqJ-Un-AXR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -4006,7 +4006,7 @@
         <!--DashBoard-->
         <scene sceneID="h8N-5q-TNE">
             <objects>
-                <viewController storyboardIdentifier="teacherDashboard" id="s0b-al-LPO" customClass="TeacherDashboardController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="teacherDashboard" id="s0b-al-LPO" customClass="TeacherDashboardController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LNK-GX-h6U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="638"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4103,7 +4103,7 @@
         <!--Daily Schedule-->
         <scene sceneID="W77-pB-y4e">
             <objects>
-                <viewController storyboardIdentifier="schedule" id="Ora-E9-cNN" customClass="DailyScheduleViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="schedule" id="Ora-E9-cNN" customClass="DailyScheduleViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fls-4e-R4u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4153,7 +4153,7 @@
         <!--Attendance-->
         <scene sceneID="WIQ-0O-7Nf">
             <objects>
-                <viewController storyboardIdentifier="st_attendance" id="zG0-CS-dul" customClass="StudentAttandanceController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="st_attendance" id="zG0-CS-dul" customClass="StudentAttandanceController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bcz-XV-DRW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4229,7 +4229,7 @@
         <!--Assignment-->
         <scene sceneID="Gsl-iP-kY3">
             <objects>
-                <viewController storyboardIdentifier="teacher_assignment" id="Tui-nL-uN0" customClass="TeacherAssignmentController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="teacher_assignment" id="Tui-nL-uN0" customClass="TeacherAssignmentController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tmd-NM-xcS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4308,7 +4308,7 @@
         <!--Student Faculty Controller-->
         <scene sceneID="7IX-Xe-osR">
             <objects>
-                <viewController storyboardIdentifier="studentdashboard" id="xUc-Sk-T3w" customClass="StudentFacultyController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="studentdashboard" id="xUc-Sk-T3w" customClass="StudentFacultyController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eie-8r-MbF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4338,7 +4338,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0078431372550000003" green="0.1137254902" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KNH-nf-DtS" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KNH-nf-DtS" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                 <rect key="frame" x="12" y="135" width="347" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -4381,7 +4381,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rxj-bx-kV9" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rxj-bx-kV9" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                 <rect key="frame" x="13" y="209" width="348" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -4488,7 +4488,7 @@
         <!--Study Progress-->
         <scene sceneID="HdZ-d5-0CY">
             <objects>
-                <viewController storyboardIdentifier="facultyStudy" id="B8c-0H-O15" customClass="FacultyStudyProgress" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="facultyStudy" id="B8c-0H-O15" customClass="FacultyStudyProgress" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8LD-Zj-Cfp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4564,7 +4564,7 @@
         <!--Select Student-->
         <scene sceneID="Yml-Rh-YX1">
             <objects>
-                <viewController storyboardIdentifier="selectStudent" id="TOp-MK-j44" customClass="SelectStudentViewController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="selectStudent" id="TOp-MK-j44" customClass="SelectStudentViewController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ivE-rP-9MY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4636,7 +4636,7 @@
         <!--More-->
         <scene sceneID="Ud5-UQ-vgf">
             <objects>
-                <tableViewController id="fXt-3J-0jf" customClass="MenuController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="fXt-3J-0jf" customClass="MenuController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nJ9-on-ACG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4686,7 +4686,7 @@
         <!--HomeWork-->
         <scene sceneID="l5g-ov-4cs">
             <objects>
-                <viewController storyboardIdentifier="facultyHomeWork" id="ZVE-ZQ-lXN" customClass="FacultyHomeWorkController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="facultyHomeWork" id="ZVE-ZQ-lXN" customClass="FacultyHomeWorkController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y34-P2-uqa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4745,12 +4745,12 @@
         <!--Upload HomeWork-->
         <scene sceneID="kgX-d2-Y3W">
             <objects>
-                <viewController id="PYh-3r-JdA" customClass="UploadHomeWorkController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="PYh-3r-JdA" customClass="UploadHomeWorkController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AoS-2u-Wgr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qKb-LI-edF" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qKb-LI-edF" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="217" width="375" height="474"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -4880,7 +4880,7 @@
         <!--Custom Notification-->
         <scene sceneID="AHx-Ah-7sR">
             <objects>
-                <viewController storyboardIdentifier="custom" id="uvE-LU-Z2a" customClass="CustomNotificationController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="custom" id="uvE-LU-Z2a" customClass="CustomNotificationController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oIL-c8-I57">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -5193,7 +5193,7 @@
         <!--Profile-->
         <scene sceneID="CCS-Dd-RF6">
             <objects>
-                <tableViewController storyboardIdentifier="teacher_profile" id="KCx-FW-S3U" customClass="TeacherProfileController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="teacher_profile" id="KCx-FW-S3U" customClass="TeacherProfileController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="rMV-Ye-1n7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -5249,12 +5249,12 @@
         <!--Upload Circular-->
         <scene sceneID="wAJ-gC-Z8Y">
             <objects>
-                <viewController storyboardIdentifier="uploadcircular" id="Sic-jd-BAS" customClass="UploadCircularSyllabusController" customModule="Shivalik" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="uploadcircular" id="Sic-jd-BAS" customClass="UploadCircularSyllabusController" customModule="K12Accelerate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="92o-RR-mz4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D5o-iG-vgI" customClass="CardView" customModule="Shivalik" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D5o-iG-vgI" customClass="CardView" customModule="K12Accelerate" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="217" width="375" height="474"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>

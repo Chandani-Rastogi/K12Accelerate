@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "69964F3C22DC5EB700B9B103"
-               BuildableName = "Shivalik.app"
+               BuildableName = "K12Accelerate.app"
                BlueprintName = "eLiteSIS"
                ReferencedContainer = "container:eLiteSIS.xcodeproj">
             </BuildableReference>
@@ -31,7 +31,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "69964F3C22DC5EB700B9B103"
-            BuildableName = "Shivalik.app"
+            BuildableName = "K12Accelerate.app"
             BlueprintName = "eLiteSIS"
             ReferencedContainer = "container:eLiteSIS.xcodeproj">
          </BuildableReference>
@@ -74,7 +74,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "69964F3C22DC5EB700B9B103"
-            BuildableName = "Shivalik.app"
+            BuildableName = "K12Accelerate.app"
             BlueprintName = "eLiteSIS"
             ReferencedContainer = "container:eLiteSIS.xcodeproj">
          </BuildableReference>
@@ -104,7 +104,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "69964F3C22DC5EB700B9B103"
-            BuildableName = "Shivalik.app"
+            BuildableName = "K12Accelerate.app"
             BlueprintName = "eLiteSIS"
             ReferencedContainer = "container:eLiteSIS.xcodeproj">
          </BuildableReference>

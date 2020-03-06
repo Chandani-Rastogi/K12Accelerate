@@ -30,9 +30,9 @@ class WebService: NSObject {
     
     let baseURL = "http://104.211.88.67:5344/SIS_Student/"
     let facultlyBaseURL = "http://104.211.88.67:5344/SIS/"
-    let schoolid = "K12_PRO_003"
+    // let schoolid = "K12_PRO_003"
     let commonURL = "http://104.211.88.67:5344/SIS_Common/"
-    
+    let schoolid : String = (UserDefaults.standard.value(forKey:"SchoolID") as? String)!
     
     //Mark : Student Webservices
     
