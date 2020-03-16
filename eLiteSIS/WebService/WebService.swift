@@ -30,9 +30,9 @@ class WebService: NSObject {
     
     let baseURL = "http://104.211.88.67:5344/SIS_Student/"
     let facultlyBaseURL = "http://104.211.88.67:5344/SIS/"
-    // let schoolid = "K12_PRO_003"
+    let schoolid = "K12_PRO_003"
     let commonURL = "http://104.211.88.67:5344/SIS_Common/"
-    let schoolid : String = (UserDefaults.standard.value(forKey:"SchoolID") as? String)!
+    //let schoolid : String = (UserDefaults.standard.value(forKey:"SchoolID") as? String)!
     
     //Mark : Student Webservices
     
@@ -1144,6 +1144,7 @@ class WebService: NSObject {
     
     // Mark : GetDepartmentList
     func GetDepartment(completion: @escaping (_ success: JSON?, _ error: Error? ) -> Void ) {
+        
         let requestURL = commonURL + "GetDepartmentList/" + schoolid
         print(requestURL)
         let encodedURL = requestURL.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)
@@ -1161,6 +1162,7 @@ class WebService: NSObject {
     
     // Mark : GetEmployeeList
     func GetEmployeeList(departmentID:String,completion: @escaping (_ success: JSON?, _ error: Error? ) -> Void ) {
+        
         let requestURL = commonURL + "GetEmployeeList/" + departmentID + "/" + schoolid
         print(requestURL)
         let encodedURL = requestURL.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)
@@ -1177,6 +1179,7 @@ class WebService: NSObject {
     
     // Mark : Get Basic Fee Detail For Student
     func GetBasicFeeDetailForStudent(studentID:String, completion: @escaping (_ success: JSON?, _ error:Error?) -> Void)  {
+        
         let requestURL = "http://104.211.88.67:5360/api/SISeUPP"
         print(requestURL)
         
@@ -1201,7 +1204,9 @@ class WebService: NSObject {
     
     // Mark : GetFeeDetailForUppPaymentt
     func GetFeeDetailForUppPayment(regID:String,fromMonth:String,toMonth:String,paymentID:String,amount:String, completion: @escaping (_ success: JSON?, _ error:Error?) -> Void)  {
+        
         let requestURL = "http://104.211.88.67:5360/api/SISeUPP"
+        
         print(requestURL)
         
         let params = [
@@ -1246,19 +1251,28 @@ class WebService: NSObject {
             }
         }
     }
-    
-    
-    func validateSchoolID(schoolID:String,completion:@escaping (_ succes: JSON?, _ error: Error?) -> Void) {
-        let requestedURL = ""
-        let encodedURL = requestedURL.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)
-        Alamofire.request(encodedURL!,headers: nil).responseJSON { (responseData) -> Void in
-            if let result = responseData.result.value{
-                let responseDict = JSON(result)
-                completion(responseDict,nil)
+   
+  // Mark : validateSchoolID
+    func validateSchoolID(completion: @escaping (_ success: String?, _ error: Error? ) -> Void ) {
+        let requestURL = "http://104.211.88.67:5359/SIS_Common/ValidateSchoolId/K12_0PRO_003"
+        print(requestURL)
+        let encodedURL = requestURL.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)
+
+        Alamofire.request(encodedURL!, headers:nil ).responseString { (responseData) -> Void in
+
+            if let result = responseData.result.value {
+             //   let responseDict = result
+               // debugPrint(responseDict)
+                completion(result,nil)
+                
             }else{
-                completion(nil,responseData.error)
+                print("reponse error \(responseData.error)")
+                completion(nil, responseData.error)
             }
         }
     }
+
+    
+    
     
 }

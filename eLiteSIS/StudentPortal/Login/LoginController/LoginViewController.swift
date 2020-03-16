@@ -11,23 +11,30 @@ import SwiftyJSON
 import Firebase
 
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController,UITextFieldDelegate {
     
     @IBOutlet weak var userNameTextfield: UITextField!
-    
     @IBOutlet weak var passwordTextField: UITextField!
-    
     @IBOutlet weak var loginButton: UIButton!
+    
+    
     var md5Hex : String = ""
     var iconClick = true
     var passswodtext: String = ""
     var textField: UITextField?
     var schoolId: String?
+  
+    
+    var alert: UIAlertController!
+    var action: UIAlertAction!
+    var action2: UIAlertAction!
+    var nameTextFeld:UITextField!
+  
     
     @IBOutlet weak var showPassword: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+      
         userNameTextfield.setLeftView(image: UIImage.init(named: "user4")!)
         passwordTextField.setLeftView(image: UIImage.init(named: "password")!)
         passwordTextField.setRightView(image: UIImage.init(named: "hide")!)
@@ -43,7 +50,10 @@ class LoginViewController: UIViewController {
         super.viewDidAppear(animated)
         
         if (UserDefaults.standard.string(forKey: "SchoolID") == nil) {
-            askForSchoolID()
+          //  askForSchoolID()
+            
+             askSchoolID()
+            
         }
         
     }
@@ -96,12 +106,12 @@ class LoginViewController: UIViewController {
     
     
     func fetchLogin(user:String , password : String)  {
-        if InternetReachability.isConnectedToNetwork(){
+        if InternetReachability.isConnectedToNetwork() {
             WebService.shared.loginUserWith(username:user, password:password, completion:{(response, error) in
                 
                 if error == nil , let responseDict = response {
                     ProgressLoader.shared.showLoader(withText:"")
-
+                    
                     if responseDict.count>0 {
                         print(responseDict)
                         
@@ -125,18 +135,18 @@ class LoginViewController: UIViewController {
                             
                             let notificationID = responseDict["value"][0]["NotificationId"].stringValue
                             UserDefaults.standard.set(notificationID, forKey:"NotificationId")
-                    
+                            
                             UserDefaults.standard.set(sisSchoolValue, forKey:"sisSchoolValue")
                             
                             
                             self.postTokenID(loginMasterId:loginMasterId)
-                        
+                            
                             UserDefaults.standard.setIsLoggedIn(value:true)
                             
                             if UserDefaults.standard.value(forKey:"new_rolecode") as? String == "1" {
                                 if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tabBar") as? TabBarViewController{
-                                     vc.modalPresentationStyle = .fullScreen
-                                     vc.selectedIndex = 1
+                                    vc.modalPresentationStyle = .fullScreen
+                                    vc.selectedIndex = 1
                                     self.present(vc, animated: false, completion: nil)
                                 }
                             }
@@ -145,7 +155,7 @@ class LoginViewController: UIViewController {
                                 if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "teacherTabeBar") as? TeacherTabController{
                                     vc.modalPresentationStyle = .fullScreen
                                     vc.selectedIndex = 1
-                                   self.present(vc, animated: false, completion: nil)
+                                    self.present(vc, animated: false, completion: nil)
                                     
                                 }
                             }
@@ -154,7 +164,7 @@ class LoginViewController: UIViewController {
                                 if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "teacherTabeBar") as? TeacherTabController{
                                     vc.modalPresentationStyle = .fullScreen
                                     vc.selectedIndex = 1
-                                   self.present(vc, animated: false, completion: nil)
+                                    self.present(vc, animated: false, completion: nil)
                                     
                                 }
                             }
@@ -162,7 +172,7 @@ class LoginViewController: UIViewController {
                         else{
                             
                             ProgressLoader.shared.hideLoader()
-                             self.view.makeToast("Invalid Login Details!", duration: 1.0, position: .bottom)
+                            self.view.makeToast("Invalid Login Details!", duration: 1.0, position: .bottom)
                             
                         }
                         
@@ -171,7 +181,7 @@ class LoginViewController: UIViewController {
                 }else{
                     ProgressLoader.shared.hideLoader()
                     self.view.makeToast("Invalid Details!!!", duration: 1.0, position: .bottom)
-                   
+                    
                 }
                 ProgressLoader.shared.hideLoader()
             })
@@ -197,61 +207,106 @@ class LoginViewController: UIViewController {
         }
     }
     
-    func askForSchoolID() {
-         
-          let alert = UIAlertController(title: "Welcome to K12Accelerate !",
-                                        message: "Users installing the app for first time shall enter the School ID received on their registered Email / Mobile to continue...",
-                                        preferredStyle: .alert)
-          // Submit button
-          let okAction = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
-              // Get 1st TextField's text
-              self.schoolId = alert.textFields![0].text
-              if self.schoolId == "" {
-                  AlertManager.shared.showAlertWith(title: "Alert", message: "School ID cannot be left blank")
-              }else{
+    func askSchoolID() {
+        
+        alert = UIAlertController(title: "Welcome to Accelerate App!!", message:"Users installing the app for first time shall enter the School ID received on their registered Email / Mobile to continue...", preferredStyle: .alert)
+        alert.addTextField { (textField) in
+            
+            self.nameTextFeld = textField
+            self.nameTextFeld.placeholder = "Enter School ID"
+            self.nameTextFeld.delegate = self
+            
+        }
+        action = UIAlertAction(title: "Add", style: .default , handler: { (action) -> Void in
+            // Get 1st TextField's text
+            self.schoolId = self.alert.textFields![0].text
+            if self.schoolId == "" {
+                self.InvalidSchoolIDAlert(title:"Alert!", message: "School ID cannot be left blank")
+            }
+            else{
                 self.validateSchoolID(schoolId:self.schoolId!)
-                  UserDefaults.standard.set(self.schoolId!, forKey: "SchoolID")
-                 // self.buttonClicked() // reetesh
-              }
-          })
-          
-          // Cancel button
-            let cancel = UIAlertAction(title: "Cancel", style: .destructive, handler: { (action) -> Void in })
-         
-          // Add 1 textField and customize it
-          alert.addTextField { (textField: UITextField) in
-              textField.text = ""
-              textField.keyboardAppearance = .dark
-              textField.keyboardType = .default
-              textField.autocorrectionType = .no
-              textField.placeholder = "Type school ID here"
-              textField.clearButtonMode = .whileEditing
-          }
-          
-          // Add action buttons and present the Alert
-          alert.addAction(cancel)
-          alert.addAction(okAction)
-          present(alert, animated: true, completion: nil)
-      }
+                
+                // self.buttonClicked() // reetesh
+            }
+        })
+        
+        action.isEnabled = false
+        //action2 = UIAlertAction(title: "Dismiss", style: .default)
+        alert.addAction(action)
+        alert.actions[0].isEnabled = false
+        //alert.addAction(action2)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+       
+        if !((nameTextFeld.text?.isEmpty)!) {
+            
+            self.action.isEnabled = true
+            
+            if textField == self.nameTextFeld {
+                let maxLength = 25
+                let currentString: NSString = textField.text! as NSString
+                let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
+                return newString.length <= maxLength
+            }
+            
+        }
+        else {
+             alert.actions[0].isEnabled = false
+        }
+        return true
+    }
+    
+    
+    func  InvalidSchoolIDAlert(title:String , message : String) {
+        // Create the alert controller
+        let alertController = UIAlertController(title:title, message:message, preferredStyle: .alert)
+
+           // Create the actions
+        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {
+               UIAlertAction in
+            self.askSchoolID()
+           }
+           // Add the actions
+           alertController.addAction(okAction)
+           // Present the controller
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    
+    
   
-    func validateSchoolID(schoolId:String){
-        WebService.shared.validateSchoolID(schoolID:schoolId,completion:{(response, error) in
+    func validateSchoolID(schoolId:String) {
+        ProgressLoader.shared.showLoader(withText:"Verifying SchoolID!!")
+        WebService.shared.validateSchoolID(completion:{(response, error) in
             if error == nil , let responseDict = response {
-                ProgressLoader.shared.showLoader(withText:"Verifying SchoolID!!")
                 print(responseDict)
                 
-            }else{
+                if responseDict == "true" {
+                     ProgressLoader.shared.hideLoader()
+                    UserDefaults.standard.set(self.schoolId!, forKey: "SchoolID")
+                }
+                if responseDict == "False" {
+                    ProgressLoader.shared.hideLoader()
+                    self.InvalidSchoolIDAlert(title: "Invalid School ID!" ,message: "Please Enter correct School ID")
+                }
+            }else
+            {
+                ProgressLoader.shared.hideLoader()
+                print(response)
                 AlertManager.shared.showAlertWith(title: "Error!", message: "while getting response")
             }
             ProgressLoader.shared.hideLoader()
         })
     }
-    
+      
 }
 // Put this piece of code anywhere you like
 extension UIViewController {
+    
     func hideKeyboardWhenTappedAround() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action:   #selector(UIViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
@@ -259,6 +314,7 @@ extension UIViewController {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
+    
 }
 
 extension UITextField {
@@ -295,4 +351,8 @@ extension UIView {
         layer.add(animation, forKey: "shake")
     }
 }
+
+
+
+
 

@@ -29,6 +29,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         
+        UserDefaults.standard.removeObject(forKey:"SchoolID")
+        
+        print(UserDefaults.standard.value(forKey: "SchoolID"))
+        
         annoyingRuleExample()
         
      //   Siren.shared.wail()

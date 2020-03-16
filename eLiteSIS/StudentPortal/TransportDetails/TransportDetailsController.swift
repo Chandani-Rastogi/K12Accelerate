@@ -110,7 +110,6 @@ class TransportDetailsController: UIViewController,UITableViewDelegate,UITableVi
     }
     
     func getTransportDetail() {
-        
         ProgressLoader.shared.showLoader(withText: "Loadingg Transport Details .....")
         WebService.shared.GetTransportDetail(studentID:(UserDefaults.standard.object(forKey:"userID") as? String)!, completion:{(response, error) in
             if error == nil , let responseDict = response {
