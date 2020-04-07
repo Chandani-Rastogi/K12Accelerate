@@ -8,7 +8,9 @@
 
 import UIKit
 
+
 struct FeeReceipt {
+    
     let ReceiptNo: String!
     let Transaction_Date: String!
     let Amount: String!
@@ -24,8 +26,10 @@ struct FeeReceipt {
     }
 }
 
-class FeeReceiptTableViewController: UITableViewController {
 
+
+class FeeReceiptTableViewController: UITableViewController {
+    
     var feeReceiptDetails = [FeeReceipt]()
     
     override func viewDidLoad() {
@@ -36,40 +40,39 @@ class FeeReceiptTableViewController: UITableViewController {
         self.tableView.dataSource = nil
         getFeeReceipt()
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return self.feeReceiptDetails.count
     }
-
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-          let cell = tableView.dequeueReusableCell(withIdentifier: "sampleTableViewCell") as! sampleTableViewCell
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "sampleTableViewCell") as! sampleTableViewCell
         cell.dateLabel.text = self.feeReceiptDetails[indexPath.row].Transaction_Date
-        
         cell.title.text = self.feeReceiptDetails[indexPath.row].ReceiptNo
-        
         cell.detailTextView.text = "Paid Rs. " + String(self.feeReceiptDetails[indexPath.row].Amount) + " for " + String(self.feeReceiptDetails[indexPath.row].FeePaymentTypen) + "\n" + "Fee Duration: " + String(self.feeReceiptDetails[indexPath.row].ReceiptDuration)
+        return cell
         
-          return cell
     }
     
     func getFeeReceipt() {
+        
         ProgressLoader.shared.showLoader(withText: "Loading Fee Receipt Details .....")
+        
         WebService.shared.GetFeeReceipt(regID:"", completion:{(response, error) in
             if error == nil , let responseDict = response {
                 self.feeReceiptDetails.removeAll()
                 if let receiptDict = responseDict["value"].arrayObject as? [[String:Any]]{
-                   print(receiptDict)
+                    print(receiptDict)
                     for data in receiptDict {
                         let object = FeeReceipt(dict: data)
                         self.feeReceiptDetails.append(object)
@@ -88,11 +91,11 @@ class FeeReceiptTableViewController: UITableViewController {
             ProgressLoader.shared.hideLoader()
         })
     }
-
+    
     @IBAction func backButton(_ sender: Any) {
         
         let destViewController  = storyboard?.instantiateViewController(withIdentifier: "more") as! MoreTableViewController
-         self.navigationController?.pushViewController(destViewController, animated: false)
+        self.navigationController?.pushViewController(destViewController, animated: false)
     }
     
 }

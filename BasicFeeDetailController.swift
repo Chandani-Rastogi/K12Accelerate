@@ -185,6 +185,7 @@ class BasicFeeDetailController: UIViewController,UITableViewDelegate,UITableView
     var monthName : [String] = []
     var monthDueCount : [String] = []
     let monthDropDown =  DropDown()
+    var labelText : String = ""
     
     var arraCount : Int = 0
     var total : Int = 0
@@ -194,6 +195,7 @@ class BasicFeeDetailController: UIViewController,UITableViewDelegate,UITableView
         ]
     }()
      let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main",bundle: nil)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.countArray.removeAll()
@@ -225,6 +227,8 @@ class BasicFeeDetailController: UIViewController,UITableViewDelegate,UITableView
         monthDropDown.selectionAction = {[weak self](index, item) in
             self?.PayuptoButton.setTitle("", for: .normal)
             self?.payUptoMonth.text = item
+            self?.labelText = item
+            print("\(item)")
             self?.arraCount = index + 1
             self?.feeStructure.reloadData()
         }
@@ -243,8 +247,14 @@ class BasicFeeDetailController: UIViewController,UITableViewDelegate,UITableView
         var cell = tableView.dequeueReusableCell(withIdentifier: "BasicPayTableViewCell") as! BasicPayTableViewCell
         cell.backgroundColor = .clear
         cell.selectionStyle = .none
+        if arraCount == monthName.count {
+         payUptoMonth.text = self.feeStructureDetails[0].feePaymentDetailslist.last?.monthName
+        }
+        else  {
+            payUptoMonth.text = labelText
+        }
         payFromMonth.text = self.feeStructureDetails[0].feePaymentDetailslist[0].monthName
-        payUptoMonth.text = self.feeStructureDetails[0].feePaymentDetailslist.last?.monthName
+       
         cell.monthLabel.text = self.feeStructureDetails[0].feePaymentDetailslist[indexPath.row].monthName
         cell.monthDue.text = "Rs." + String(self.feeStructureDetails[0].feePaymentDetailslist[indexPath.row].totalMonthlyDue)
         cell.paidAmt.text = "Rs." + String(self.feeStructureDetails[0].feePaymentDetailslist[indexPath.row].totalAmountPaid)
@@ -341,6 +351,8 @@ class BasicFeeDetailController: UIViewController,UITableViewDelegate,UITableView
                 vc.fromBasicFee = true
                 self.present(vc, animated: true, completion: nil)
                 ProgressLoader.shared.hideLoader()
+                
+                
             }
             else{
                 ProgressLoader.shared.hideLoader()

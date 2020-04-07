@@ -9,6 +9,7 @@
 import UIKit
 
 class PayDetailCell: UITableViewCell {
+    
     @IBOutlet weak var amount: UILabel!
     @IBOutlet weak var itemName: UILabel!
     override func awakeFromNib() {

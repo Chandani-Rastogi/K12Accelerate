@@ -31,6 +31,7 @@ class WebService: NSObject {
     let baseURL = "http://104.211.88.67:5344/SIS_Student/"
     let facultlyBaseURL = "http://104.211.88.67:5344/SIS/"
     let schoolid = "K12_PRO_003"
+    // let schoolid = "C720308_07"
     let commonURL = "http://104.211.88.67:5344/SIS_Common/"
     //let schoolid : String = (UserDefaults.standard.value(forKey:"SchoolID") as? String)!
     
@@ -1254,7 +1255,7 @@ class WebService: NSObject {
    
   // Mark : validateSchoolID
     func validateSchoolID(completion: @escaping (_ success: String?, _ error: Error? ) -> Void ) {
-        let requestURL = "http://104.211.88.67:5359/SIS_Common/ValidateSchoolId/K12_0PRO_003"
+        let requestURL = "http://104.211.88.67:5359/SIS_Common/ValidateSchoolId/C720308_07"
         print(requestURL)
         let encodedURL = requestURL.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)
 

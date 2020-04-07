@@ -185,7 +185,7 @@ class NewDashboardController: UIViewController,UICollectionViewDelegate,UICollec
     }
     
     func fetchProfile(regid:String) {
-       
+        
         self.fetchhomeWorkList(userId:(UserDefaults.standard.object(forKey: "userID") as? String)!)
         
         CoreDataController.sharedInstance.fetchProfileDataRequest(regID:regid, completion:{(response, error) in

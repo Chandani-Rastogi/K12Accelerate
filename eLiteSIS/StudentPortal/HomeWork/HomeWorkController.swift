@@ -144,7 +144,7 @@ class HomeWorkController: UIViewController,UITableViewDataSource,UITableViewDele
                           if error == nil , let responseDict = response {
                               if responseDict.count > 0 {
                                  
-                                   let filename = responseDict["value"][0]["filename"].stringValue
+                                let filename = responseDict["value"][0]["filename"].stringValue
                                  let result = filename.filter { !$0.isNewline && !$0.isWhitespace }
                                   let documentBody = responseDict["value"][0]["documentbody"].stringValue
                                    self.saveBase64StringToPDF(documentBody, fileName: result)
@@ -183,7 +183,6 @@ class HomeWorkController: UIViewController,UITableViewDataSource,UITableViewDele
              //handle write error here
          }
          self.showSavedPdf(url:base64String, fileName:fileName)
-         
      }
      
      func showSavedPdf(url:String, fileName:String) {

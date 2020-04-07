@@ -9,7 +9,7 @@
 import UIKit
 
 class FeeReceiptNavigationController: UINavigationController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -73,7 +73,6 @@ class WebViewController: UIViewController,WKNavigationDelegate,WKUIDelegate {
         if let url = webView.url?.absoluteString{
            // print("didFinish url = \(url)")
             if url == "https://demo.eupp.in/ExternalUserReceipt?PayerId=&UPPTransactionId=&TransactionStatus=Success" {
-                
                 if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tabBar") as? TabBarViewController
                 {
                     vc.selectedIndex = 4
